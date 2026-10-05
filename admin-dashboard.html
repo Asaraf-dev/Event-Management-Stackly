@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Stackly Events</title>
+    <link rel="icon" href="assets/images/brand-logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+    <!--- Dashboard --->
+    <main class="em-dash">
+        <!--- Sidebar --->
+        <aside class="em-dash-sidebar" id="emDashSidebar">
+            <div class="em-dash-sidebar-top">
+                <a href="index.html" class="em-dash-logo">
+                    <img src="assets/images/brand-logo.webp" alt="Stackly Events">
+                </a>
+                <!--- Mobile Sidebar Profile --->
+                <div class="em-dash-mobile-profile">
+                    <div class="em-dash-mobile-profile-image">
+                        <img src="assets/images/profile-1.webp" alt="Profile">
+                    </div>
+                    <div class="em-dash-mobile-profile-info">
+                        <span>Signed In As</span>
+                        <strong id="emDashMobileEmail">Loading...</strong>
+                    </div>
+                </div>
+            </div>
+            <!--- Sidebar Navigation --->
+            <nav class="em-dash-sidebar-nav">
+                <span class="em-dash-nav-label">Workspace</span>
+                <a href="admin-dashboard.html" class="em-dash-nav-link active">
+                    <i class="bi bi-grid-1x2"></i>
+                    <span>Overview</span>
+                </a>
+                <a href="admin-analytics.html" class="em-dash-nav-link">
+                    <i class="bi bi-bar-chart"></i>
+                    <span>Analytics</span>
+                </a>
+                <a href="admin-events.html" class="em-dash-nav-link">
+                    <i class="bi bi-calendar-event"></i>
+                    <span>Events</span>
+                </a>
+                <a href="admin-profile.html" class="em-dash-nav-link">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="em-dash-nav-link em-dash-logout" id="emDashLogout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+            <div class="em-dash-sidebar-bottom">
+                <span>Stackly Events</span>
+                <small>Event Management Platform</small>
+            </div>
+        </aside>
+        <!--- Sidebar Overlay --->
+        <div class="em-dash-overlay" id="emDashOverlay"></div>
+        <!--- Dashboard Main --->
+        <div class="em-dash-main">
+            <!--- Topbar --->
+            <header class="em-dash-topbar">
+                <div class="em-dash-topbar-left">
+                    <button type="button" class="em-dash-menu-btn" id="emDashMenuBtn" aria-label="Open menu">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <div class="em-dash-title">
+                        <span>Workspace</span>
+                        <h1>Admin Dashboard</h1>
+                    </div>
+                </div>
+                <div class="em-dash-topbar-right">
+                    <div class="em-dash-email">
+                        <span>Signed In As</span>
+                        <strong id="emDashEmail">Loading...</strong>
+                    </div>
+                    <div class="em-dash-profile">
+                        <img src="assets/images/profile-1.webp" alt="Profile">
+                        <span class="em-dash-profile-status"></span>
+                    </div>
+                </div>
+            </header>
+            <!--- Dashboard Content --->
+
+            <!--- Dashboard Content --->
+            <section class="em-dash-content">
+                <!--- Overview Header --->
+                <div class="em-ov-header">
+                    <div class="em-ov-header-content">
+                        <span class="em-ov-kicker">Overview</span>
+                        <h2>Good Morning, <strong id="emCloWelcomeName" >Admin.</strong></h2>
+                        <p>Here's a quick look at what's happening across your event workspace.</p>
+                    </div>
+                    <div class="em-ov-header-actions">
+                        <div class="em-ov-date">
+                            <i class="bi bi-calendar3"></i>
+                            <span id="emOvDate">05 Oct 2026</span>
+                        </div>
+                        <a href="404.html" class="em-ov-create-btn">
+                            <i class="bi bi-plus-lg"></i>
+                            <span>Create Event</span>
+                        </a>
+                    </div>
+                </div>
+                <!--- Overview Statistics --->
+                <div class="em-ov-stats">
+                    <article class="em-ov-stat-card">
+                        <div class="em-ov-stat-top">
+                            <div class="em-ov-stat-icon em-ov-stat-icon-purple">
+                                <i class="bi bi-calendar-event"></i>
+                            </div>
+                            <span class="em-ov-stat-trend positive">
+                                <i class="bi bi-arrow-up"></i>
+                                12.5%
+                            </span>
+                        </div>
+                        <div class="em-ov-stat-info">
+                            <span>Total Events</span>
+                            <strong>48</strong>
+                            <small>Compared to last month</small>
+                        </div>
+                    </article>
+                    <article class="em-ov-stat-card">
+                        <div class="em-ov-stat-top">
+                            <div class="em-ov-stat-icon em-ov-stat-icon-pink">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <span class="em-ov-stat-trend positive">
+                                <i class="bi bi-arrow-up"></i>
+                                8.4%
+                            </span>
+                        </div>
+                        <div class="em-ov-stat-info">
+                            <span>Total Clients</span>
+                            <strong>326</strong>
+                            <small>Compared to last month</small>
+                        </div>
+                    </article>
+                    <article class="em-ov-stat-card">
+                        <div class="em-ov-stat-top">
+                            <div class="em-ov-stat-icon em-ov-stat-icon-orange">
+                                <i class="bi bi-hourglass-split"></i>
+                            </div>
+                            <span class="em-ov-stat-trend positive">
+                                <i class="bi bi-arrow-up"></i>
+                                5.2%
+                            </span>
+                        </div>
+                        <div class="em-ov-stat-info">
+                            <span>Upcoming Events</span>
+                            <strong>16</strong>
+                            <small>Next 90 days</small>
+                        </div>
+                    </article>
+                    <article class="em-ov-stat-card">
+                        <div class="em-ov-stat-top">
+                            <div class="em-ov-stat-icon em-ov-stat-icon-green">
+                                <i class="bi bi-check2-circle"></i>
+                            </div>
+                            <span class="em-ov-stat-trend positive">
+                                <i class="bi bi-arrow-up"></i>
+                                15.8%
+                            </span>
+                        </div>
+                        <div class="em-ov-stat-info">
+                            <span>Completed Events</span>
+                            <strong>32</strong>
+                            <small>This year</small>
+                        </div>
+                    </article>
+                </div>
+                <!--- Performance And Activity --->
+                <div class="em-ov-main-grid">
+                    <!--- Event Performance --->
+                    <div class="em-ov-performance em-ov-panel">
+                        <div class="em-ov-panel-header">
+                            <div>
+                                <span class="em-ov-panel-kicker">Performance</span>
+                                <h3>Event Overview</h3>
+                            </div>
+                            <div class="em-ov-chart-filter">
+                                <button type="button" class="active" data-period="monthly">Monthly</button>
+                                <button type="button" data-period="weekly">Weekly</button>
+                            </div>
+                        </div>
+                        <div class="em-ov-chart-summary">
+                            <div>
+                                <strong>48</strong>
+                                <span>Total Events</span>
+                            </div>
+                            <div class="em-ov-chart-growth">
+                                <i class="bi bi-arrow-up-right"></i>
+                                <span>18.6% growth</span>
+                            </div>
+                        </div>
+                        <div class="em-ov-chart">
+                            <div class="em-ov-chart-y">
+                                <span>50</span>
+                                <span>40</span>
+                                <span>30</span>
+                                <span>20</span>
+                                <span>10</span>
+                                <span>0</span>
+                            </div>
+                            <div class="em-ov-chart-area">
+                                <div class="em-ov-chart-grid">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <svg class="em-ov-chart-svg" viewBox="0 0 700 250" preserveAspectRatio="none">
+                                    <defs>
+                                        <linearGradient id="emOvChartGradient" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="#6C4DF6" stop-opacity=".22"></stop>
+                                            <stop offset="100%" stop-color="#6C4DF6" stop-opacity="0"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <path class="em-ov-chart-fill"
+                                        d="M0,190 C60,165 80,175 125,145 C170,115 185,145 230,125 C275,105 295,120 340,90 C385,60 405,95 450,70 C495,45 520,75 560,48 C600,22 635,48 700,20 L700,250 L0,250 Z">
+                                    </path>
+                                    <path class="em-ov-chart-line"
+                                        d="M0,190 C60,165 80,175 125,145 C170,115 185,145 230,125 C275,105 295,120 340,90 C385,60 405,95 450,70 C495,45 520,75 560,48 C600,22 635,48 700,20">
+                                    </path>
+                                   <circle cx="700" cy="20" r="5">
+                                </svg>
+                                <div class="em-ov-chart-months">
+                                    <span>May</span>
+                                    <span>Jun</span>
+                                    <span>Jul</span>
+                                    <span>Aug</span>
+                                    <span>Sep</span>
+                                    <span>Oct</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--- Quick Summary --->
+                    <div class="em-ov-summary em-ov-panel">
+                        <div class="em-ov-panel-header">
+                            <div>
+                                <span class="em-ov-panel-kicker">At A Glance</span>
+                                <h3>Event Status</h3>
+                            </div>
+                            <a href="404.html" class="em-ov-panel-link">
+                                View All
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                        <div class="em-ov-status-list">
+                            <div class="em-ov-status-item">
+                                <div class="em-ov-status-icon live">
+                                    <i class="bi bi-broadcast"></i>
+                                </div>
+                                <div class="em-ov-status-info">
+                                    <strong>Live Events</strong>
+                                    <span>Currently running</span>
+                                </div>
+                                <b>04</b>
+                            </div>
+                            <div class="em-ov-status-item">
+                                <div class="em-ov-status-icon upcoming">
+                                    <i class="bi bi-calendar2-week"></i>
+                                </div>
+                                <div class="em-ov-status-info">
+                                    <strong>Upcoming</strong>
+                                    <span>Next 30 days</span>
+                                </div>
+                                <b>09</b>
+                            </div>
+                            <div class="em-ov-status-item">
+                                <div class="em-ov-status-icon pending">
+                                    <i class="bi bi-clock-history"></i>
+                                </div>
+                                <div class="em-ov-status-info">
+                                    <strong>Pending</strong>
+                                    <span>Awaiting approval</span>
+                                </div>
+                                <b>07</b>
+                            </div>
+                            <div class="em-ov-status-item">
+                                <div class="em-ov-status-icon completed">
+                                    <i class="bi bi-check-circle"></i>
+                                </div>
+                                <div class="em-ov-status-info">
+                                    <strong>Completed</strong>
+                                    <span>This month</span>
+                                </div>
+                                <b>12</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- Upcoming Events And Recent Enquiries --->
+                <div class="em-ov-secondary-grid">
+                    <!--- Upcoming Events --->
+                    <div class="em-ov-events em-ov-panel">
+                        <div class="em-ov-panel-header">
+                            <div>
+                                <span class="em-ov-panel-kicker">Schedule</span>
+                                <h3>Upcoming Events</h3>
+                            </div>
+                            <a href="404.html" class="em-ov-panel-link">
+                                View All
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                        <div class="em-ov-event-list">
+                            <article class="em-ov-event-item">
+                                <div class="em-ov-event-date">
+                                    <strong>18</strong>
+                                    <span>OCT</span>
+                                </div>
+                                <div class="em-ov-event-content">
+                                    <div>
+                                        <span class="em-ov-event-category music">Music</span>
+                                        <h4>Rhythm Under The Stars</h4>
+                                        <p><i class="bi bi-geo-alt"></i> Chennai, Tamil Nadu</p>
+                                    </div>
+                                </div>
+                                <span class="em-ov-event-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                            </article>
+                            <article class="em-ov-event-item">
+                                <div class="em-ov-event-date">
+                                    <strong>25</strong>
+                                    <span>OCT</span>
+                                </div>
+                                <div class="em-ov-event-content">
+                                    <div>
+                                        <span class="em-ov-event-category corporate">Corporate</span>
+                                        <h4>Future Leaders Summit</h4>
+                                        <p><i class="bi bi-geo-alt"></i> Bengaluru, Karnataka</p>
+                                    </div>
+                                </div>
+                                <span class="em-ov-event-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                            </article>
+                            <article class="em-ov-event-item">
+                                <div class="em-ov-event-date">
+                                    <strong>07</strong>
+                                    <span>NOV</span>
+                                </div>
+                                <div class="em-ov-event-content">
+                                    <div>
+                                        <span class="em-ov-event-category conference">Conference</span>
+                                        <h4>Ideas In Motion</h4>
+                                        <p><i class="bi bi-geo-alt"></i> Hyderabad, Telangana</p>
+                                    </div>
+                                </div>
+                                <span class="em-ov-event-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                            </article>
+                        </div>
+                    </div>
+                    <!--- Recent Enquiries --->
+                    <div class="em-ov-enquiries em-ov-panel">
+                        <div class="em-ov-panel-header">
+                            <div>
+                                <span class="em-ov-panel-kicker">Inbox</span>
+                                <h3>Recent Enquiries</h3>
+                            </div>
+                            <span class="em-ov-unread">4 New</span>
+                        </div>
+                        <div class="em-ov-enquiry-list">
+                            <div class="em-ov-enquiry-item">
+                                <div class="em-ov-enquiry-avatar">AK</div>
+                                <div class="em-ov-enquiry-info">
+                                    <strong>Arun Kumar</strong>
+                                    <span>Corporate Event · Chennai</span>
+                                </div>
+                                <small>12m</small>
+                            </div>
+                            <div class="em-ov-enquiry-item">
+                                <div class="em-ov-enquiry-avatar pink">PM</div>
+                                <div class="em-ov-enquiry-info">
+                                    <strong>Priya Menon</strong>
+                                    <span>Wedding Celebration · Coimbatore</span>
+                                </div>
+                                <small>1h</small>
+                            </div>
+                            <div class="em-ov-enquiry-item">
+                                <div class="em-ov-enquiry-avatar orange">RS</div>
+                                <div class="em-ov-enquiry-info">
+                                    <strong>Rahul Sharma</strong>
+                                    <span>Conference · Bengaluru</span>
+                                </div>
+                                <small>3h</small>
+                            </div>
+                            <div class="em-ov-enquiry-item">
+                                <div class="em-ov-enquiry-avatar green">MK</div>
+                                <div class="em-ov-enquiry-info">
+                                    <strong>Meera Krishnan</strong>
+                                    <span>Private Event · Salem</span>
+                                </div>
+                                <small>5h</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- Bottom Overview --->
+                <div class="em-ov-bottom-grid">
+                    <!--- Recent Activity --->
+                    <div class="em-ov-activity em-ov-panel">
+                        <div class="em-ov-panel-header">
+                            <div>
+                                <span class="em-ov-panel-kicker">Workspace</span>
+                                <h3>Recent Activity</h3>
+                            </div>
+                        </div>
+                        <div class="em-ov-activity-list">
+                            <div class="em-ov-activity-item">
+                                <span class="em-ov-activity-dot purple"></span>
+                                <div>
+                                    <strong>New event created</strong>
+                                    <p>Future Leaders Summit was added to the calendar.</p>
+                                </div>
+                                <small>18 min ago</small>
+                            </div>
+                            <div class="em-ov-activity-item">
+                                <span class="em-ov-activity-dot pink"></span>
+                                <div>
+                                    <strong>New client enquiry</strong>
+                                    <p>Priya Menon submitted a celebration enquiry.</p>
+                                </div>
+                                <small>1 hour ago</small>
+                            </div>
+                            <div class="em-ov-activity-item">
+                                <span class="em-ov-activity-dot green"></span>
+                                <div>
+                                    <strong>Event completed</strong>
+                                    <p>Creative Minds Workshop was marked completed.</p>
+                                </div>
+                                <small>3 hours ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!--- Quick Actions --->
+                    <div class="em-ov-actions em-ov-panel">
+                        <div class="em-ov-panel-header">
+                            <div>
+                                <span class="em-ov-panel-kicker">Shortcuts</span>
+                                <h3>Quick Actions</h3>
+                            </div>
+                        </div>
+                        <div class="em-ov-action-grid">
+                            <a href="admin-events.html" class="em-ov-action">
+                                <i class="bi bi-plus-circle"></i>
+                                <span>Create Event</span>
+                            </a>
+                            <a href="admin-events.html" class="em-ov-action">
+                                <i class="bi bi-calendar2-check"></i>
+                                <span>Manage Events</span>
+                            </a>
+                            <a href="admin-analytics.html" class="em-ov-action">
+                                <i class="bi bi-graph-up-arrow"></i>
+                                <span>View Analytics</span>
+                            </a>
+                            <a href="admin-profile.html" class="em-ov-action">
+                                <i class="bi bi-person-gear"></i>
+                                <span>My Profile</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </main>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/admin-overview.js"></script>
+</body>
+
+</html>

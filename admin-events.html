@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Stackly Events</title>
+    <link rel="icon" href="assets/images/brand-logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+    <!--- Dashboard --->
+    <main class="em-dash">
+        <!--- Sidebar --->
+        <aside class="em-dash-sidebar" id="emDashSidebar">
+            <div class="em-dash-sidebar-top">
+                <a href="index.html" class="em-dash-logo">
+                    <img src="assets/images/brand-logo.webp" alt="Stackly Events">
+                </a>
+                <!--- Mobile Sidebar Profile --->
+                <div class="em-dash-mobile-profile">
+                    <div class="em-dash-mobile-profile-image">
+                        <img src="assets/images/profile-1.webp" alt="Profile">
+                    </div>
+                    <div class="em-dash-mobile-profile-info">
+                        <span>Signed In As</span>
+                        <strong id="emDashMobileEmail">Loading...</strong>
+                    </div>
+                </div>
+            </div>
+            <!--- Sidebar Navigation --->
+            <nav class="em-dash-sidebar-nav">
+                <span class="em-dash-nav-label">Workspace</span>
+                <a href="admin-dashboard.html" class="em-dash-nav-link ">
+                    <i class="bi bi-grid-1x2"></i>
+                    <span>Overview</span>
+                </a>
+                <a href="admin-analytics.html" class="em-dash-nav-link">
+                    <i class="bi bi-bar-chart"></i>
+                    <span>Analytics</span>
+                </a>
+                <a href="admin-events.html" class="em-dash-nav-link active">
+                    <i class="bi bi-calendar-event"></i>
+                    <span>Events</span>
+                </a>
+                <a href="admin-profile.html" class="em-dash-nav-link">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="em-dash-nav-link em-dash-logout" id="emDashLogout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+            <div class="em-dash-sidebar-bottom">
+                <span>Stackly Events</span>
+                <small>Event Management Platform</small>
+            </div>
+        </aside>
+        <!--- Sidebar Overlay --->
+        <div class="em-dash-overlay" id="emDashOverlay"></div>
+        <!--- Dashboard Main --->
+        <div class="em-dash-main">
+            <!--- Topbar --->
+            <header class="em-dash-topbar">
+                <div class="em-dash-topbar-left">
+                    <button type="button" class="em-dash-menu-btn" id="emDashMenuBtn" aria-label="Open menu">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <div class="em-dash-title">
+                        <span>Workspace</span>
+                        <h1>Events Dashboard</h1>
+                    </div>
+                </div>
+                <div class="em-dash-topbar-right">
+                    <div class="em-dash-email">
+                        <span>Signed In As</span>
+                        <strong id="emDashEmail">Loading...</strong>
+                    </div>
+                    <div class="em-dash-profile">
+                        <img src="assets/images/profile-1.webp" alt="Profile">
+                        <span class="em-dash-profile-status"></span>
+                    </div>
+                </div>
+            </header>
+
+            <!--- Dashboard Content --->
+            <section class="em-dash-content">
+                <!--- Admin Events Header --->
+                <div class="em-aev-header">
+                    <div class="em-aev-header-content">
+                        <span class="em-aev-kicker">Event Management</span>
+                        <h2>Manage Your <strong>Events.</strong></h2>
+                        <p>Create, organize, monitor, and manage every event from one workspace.</p>
+                    </div>
+                    <button type="button" class="em-aev-add-btn" id="emAevAddBtn">
+                        <i class="bi bi-plus-lg"></i>
+                        <span>Create Event</span>
+                    </button>
+                </div>
+                <!--- Event Statistics --->
+                <div class="em-aev-stats">
+                    <article class="em-aev-stat">
+                        <div class="em-aev-stat-icon purple">
+                            <i class="bi bi-calendar-event"></i>
+                        </div>
+                        <div>
+                            <span>Total Events</span>
+                            <strong id="emAevTotal">12</strong>
+                        </div>
+                    </article>
+                    <article class="em-aev-stat">
+                        <div class="em-aev-stat-icon orange">
+                            <i class="bi bi-clock"></i>
+                        </div>
+                        <div>
+                            <span>Upcoming</span>
+                            <strong id="emAevUpcoming">06</strong>
+                        </div>
+                    </article>
+                    <article class="em-aev-stat">
+                        <div class="em-aev-stat-icon green">
+                            <i class="bi bi-broadcast"></i>
+                        </div>
+                        <div>
+                            <span>Live Events</span>
+                            <strong id="emAevLive">02</strong>
+                        </div>
+                    </article>
+                    <article class="em-aev-stat">
+                        <div class="em-aev-stat-icon pink">
+                            <i class="bi bi-check2-circle"></i>
+                        </div>
+                        <div>
+                            <span>Completed</span>
+                            <strong id="emAevCompleted">04</strong>
+                        </div>
+                    </article>
+                </div>
+                <!--- Event Toolbar --->
+                <div class="em-aev-toolbar">
+                    <div class="em-aev-search">
+                        <i class="bi bi-search"></i>
+                        <input type="search" id="emAevSearch" placeholder="Search events..." aria-label="Search events">
+                    </div>
+                    <div class="em-aev-filters">
+                        <select id="emAevCategory" aria-label="Filter by category">
+                            <option value="all">All Categories</option>
+                            <option value="corporate">Corporate</option>
+                            <option value="conference">Conference</option>
+                            <option value="music">Music & Concerts</option>
+                            <option value="celebration">Celebration</option>
+                            <option value="workshop">Workshop</option>
+                            <option value="private">Private Event</option>
+                        </select>
+                        <select id="emAevStatus" aria-label="Filter by status">
+                            <option value="all">All Status</option>
+                            <option value="upcoming">Upcoming</option>
+                            <option value="live">Live</option>
+                            <option value="completed">Completed</option>
+                            <option value="cancelled">Cancelled</option>
+                        </select>
+                    </div>
+                </div>
+                <!--- Event List Header --->
+                <div class="em-aev-list-header">
+                    <div>
+                        <span class="em-aev-list-kicker">Workspace</span>
+                        <h3>All Events</h3>
+                    </div>
+                    <span class="em-aev-result-count" id="emAevResultCount">12 Events</span>
+                </div>
+                <!--- Event Grid --->
+                <div class="em-aev-grid" id="emAevGrid">
+                    <!--- Event Card 01 --->
+                    <article class="em-aev-card" data-category="music" data-status="live"
+                        data-title="Rhythm Under The Stars">
+                        <div class="em-aev-card-image">
+                            <img src="assets/images/event-rhythm.webp" alt="Rhythm Under The Stars">
+                            <span class="em-aev-status live">Live Now</span>
+                            <span class="em-aev-card-number">01</span>
+                        </div>
+                        <div class="em-aev-card-content">
+                            <div class="em-aev-card-meta">
+                                <span><i class="bi bi-calendar3"></i> 18 Oct 2026</span>
+                                <span><i class="bi bi-geo-alt"></i> Chennai</span>
+                            </div>
+                            <span class="em-aev-category music">Music & Concerts</span>
+                            <h3>Rhythm Under The Stars</h3>
+                            <p>An immersive live music experience built around sound, atmosphere, and unforgettable
+                                moments.</p>
+                            <div class="em-aev-card-footer">
+                                <div class="em-aev-attendees">
+                                    <i class="bi bi-people"></i>
+                                    <span>2,480 Attendees</span>
+                                </div>
+                                <div class="em-aev-actions">
+                                    <button type="button" class="em-aev-action view" data-event="Rhythm Under The Stars"
+                                        aria-label="View event">
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                    <button type="button" class="em-aev-action edit" data-event="Rhythm Under The Stars"
+                                        aria-label="Edit event">
+                                        <i class="bi bi-pencil"></i>
+                                    </button>
+                                    <button type="button" class="em-aev-action delete"
+                                        data-event="Rhythm Under The Stars" aria-label="Delete event">
+                                        <i class="bi bi-trash3"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!--- Event Card 02 --->
+                    <article class="em-aev-card" data-category="corporate" data-status="upcoming"
+                        data-title="Future Leaders Summit">
+                        <div class="em-aev-card-image">
+                            <img src="assets/images/category-conference.webp" alt="Future Leaders Summit">
+                            <span class="em-aev-status upcoming">Upcoming</span>
+                            <span class="em-aev-card-number">02</span>
+                        </div>
+                        <div class="em-aev-card-content">
+                            <div class="em-aev-card-meta">
+                                <span><i class="bi bi-calendar3"></i> 25 Oct 2026</span>
+                                <span><i class="bi bi-geo-alt"></i> Bengaluru</span>
+                            </div>
+                            <span class="em-aev-category corporate">Corporate</span>
+                            <h3>Future Leaders Summit</h3>
+                            <p>A high-impact leadership gathering designed for conversations, ideas, and meaningful
+                                connections.</p>
+                            <div class="em-aev-card-footer">
+                                <div class="em-aev-attendees">
+                                    <i class="bi bi-people"></i>
+                                    <span>1,860 Attendees</span>
+                                </div>
+                                <div class="em-aev-actions">
+                                    <button type="button" class="em-aev-action view" data-event="Future Leaders Summit"
+                                        aria-label="View event">
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                    <button type="button" class="em-aev-action edit" data-event="Future Leaders Summit"
+                                        aria-label="Edit event">
+                                        <i class="bi bi-pencil"></i>
+                                    </button>
+                                    <button type="button" class="em-aev-action delete"
+                                        data-event="Future Leaders Summit" aria-label="Delete event">
+                                        <i class="bi bi-trash3"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!--- Event Card 03 --->
+                    <article class="em-aev-card" data-category="conference" data-status="upcoming"
+                        data-title="Ideas In Motion">
+                        <div class="em-aev-card-image">
+                            <img src="assets/images/category-workshop.webp" alt="Ideas In Motion">
+                            <span class="em-aev-status upcoming">Upcoming</span>
+                            <span class="em-aev-card-number">03</span>
+                        </div>
+                        <div class="em-aev-card-content">
+                            <div class="em-aev-card-meta">
+                                <span><i class="bi bi-calendar3"></i> 07 Nov 2026</span>
+                                <span><i class="bi bi-geo-alt"></i> Hyderabad</span>
+                            </div>
+                            <span class="em-aev-category conference">Conference</span>
+                            <h3>Ideas In Motion</h3>
+                            <p>A focused conference connecting ambitious thinkers, creative minds, and industry leaders.
+                            </p>
+                            <div class="em-aev-card-footer">
+                                <div class="em-aev-attendees">
+                                    <i class="bi bi-people"></i>
+                                    <span>1,540 Attendees</span>
+                                </div>
+                                <div class="em-aev-actions">
+                                    <button type="button" class="em-aev-action view" data-event="Ideas In Motion"
+                                        aria-label="View event">
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                    <button type="button" class="em-aev-action edit" data-event="Ideas In Motion"
+                                        aria-label="Edit event">
+                                        <i class="bi bi-pencil"></i>
+                                    </button>
+                                    <button type="button" class="em-aev-action delete" data-event="Ideas In Motion"
+                                        aria-label="Delete event">
+                                        <i class="bi bi-trash3"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!--- Event Card 04 --->
+                    <article class="em-aev-card" data-category="celebration" data-status="completed"
+                        data-title="Golden Evening">
+                        <div class="em-aev-card-image">
+                            <img src="assets/images/event-card.webp" alt="Golden Evening">
+                            <span class="em-aev-status completed">Completed</span>
+                            <span class="em-aev-card-number">04</span>
+                        </div>
+                        <div class="em-aev-card-content">
+                            <div class="em-aev-card-meta">
+                                <span><i class="bi bi-calendar3"></i> 16 Jan 2027</span>
+                                <span><i class="bi bi-geo-alt"></i> Madurai</span>
+                            </div>
+                            <span class="em-aev-category celebration">Celebration</span>
+                            <h3>Golden Evening</h3>
+                            <p>An elegant celebration where premium styling, entertainment, and hospitality come
+                                together.</p>
+                            <div class="em-aev-card-footer">
+                                <div class="em-aev-attendees">
+                                    <i class="bi bi-people"></i>
+                                    <span>1,280 Attendees</span>
+                                </div>
+                                <div class="em-aev-actions">
+                                    <button type="button" class="em-aev-action view" data-event="Golden Evening"
+                                        aria-label="View event">
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                    <button type="button" class="em-aev-action edit" data-event="Golden Evening"
+                                        aria-label="Edit event">
+                                        <i class="bi bi-pencil"></i>
+                                    </button>
+                                    <button type="button" class="em-aev-action delete" data-event="Golden Evening"
+                                        aria-label="Delete event">
+                                        <i class="bi bi-trash3"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!--- Event Card 05 --->
+                    <article class="em-aev-card" data-category="workshop" data-status="upcoming"
+                        data-title="Creative Minds Workshop">
+                        <div class="em-aev-card-image">
+                            <img src="assets/images/create-production.webp" alt="Creative Minds Workshop">
+                            <span class="em-aev-status upcoming">Upcoming</span>
+                            <span class="em-aev-card-number">05</span>
+                        </div>
+                        <div class="em-aev-card-content">
+                            <div class="em-aev-card-meta">
+                                <span><i class="bi bi-calendar3"></i> 28 Nov 2026</span>
+                                <span><i class="bi bi-geo-alt"></i> Chennai</span>
+                            </div>
+                            <span class="em-aev-category workshop">Workshop</span>
+                            <h3>Creative Minds Workshop</h3>
+                            <p>A hands-on creative workshop designed to turn ideas into practical experiences and
+                                solutions.</p>
+                            <div class="em-aev-card-footer">
+                                <div class="em-aev-attendees">
+                                    <i class="bi bi-people"></i>
+                                    <span>420 Attendees</span>
+                                </div>
+                                <div class="em-aev-actions">
+                                    <button type="button" class="em-aev-action view"
+                                        data-event="Creative Minds Workshop" aria-label="View event">
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                    <button type="button" class="em-aev-action edit"
+                                        data-event="Creative Minds Workshop" aria-label="Edit event">
+                                        <i class="bi bi-pencil"></i>
+                                    </button>
+                                    <button type="button" class="em-aev-action delete"
+                                        data-event="Creative Minds Workshop" aria-label="Delete event">
+                                        <i class="bi bi-trash3"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!--- Event Card 06 --->
+                    <article class="em-aev-card" data-category="private" data-status="completed"
+                        data-title="The Private Soirée">
+                        <div class="em-aev-card-image">
+                            <img src="assets/images/category-private.webp" alt="The Private Soirée">
+                            <span class="em-aev-status completed">Completed</span>
+                            <span class="em-aev-card-number">06</span>
+                        </div>
+                        <div class="em-aev-card-content">
+                            <div class="em-aev-card-meta">
+                                <span><i class="bi bi-calendar3"></i> 05 Dec 2026</span>
+                                <span><i class="bi bi-geo-alt"></i> Chennai</span>
+                            </div>
+                            <span class="em-aev-category private">Private Event</span>
+                            <h3>The Private Soirée</h3>
+                            <p>An intimate private gathering crafted around atmosphere, personalization, and effortless
+                                hospitality.</p>
+                            <div class="em-aev-card-footer">
+                                <div class="em-aev-attendees">
+                                    <i class="bi bi-people"></i>
+                                    <span>180 Attendees</span>
+                                </div>
+                                <div class="em-aev-actions">
+                                    <button type="button" class="em-aev-action view" data-event="The Private Soirée"
+                                        aria-label="View event">
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                    <button type="button" class="em-aev-action edit" data-event="The Private Soirée"
+                                        aria-label="Edit event">
+                                        <i class="bi bi-pencil"></i>
+                                    </button>
+                                    <button type="button" class="em-aev-action delete" data-event="The Private Soirée"
+                                        aria-label="Delete event">
+                                        <i class="bi bi-trash3"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!--- Empty Event State --->
+                <div class="em-aev-empty" id="emAevEmpty">
+                    <div class="em-aev-empty-icon">
+                        <i class="bi bi-calendar-x"></i>
+                    </div>
+                    <h3>No Events Found</h3>
+                    <p>Try changing your search or filter options.</p>
+                    <button type="button" id="emAevReset">Reset Filters</button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/admin-events.js"></script>
+</body>
+
+</html>

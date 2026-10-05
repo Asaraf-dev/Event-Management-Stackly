@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Stackly Events</title>
+    <link rel="icon" href="assets/images/brand-logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+
+<body>
+    <!--- Login Page --->
+    <main class="em-auth-login">
+        <div class="em-auth-login-bg">
+            <div class="em-auth-login-grid"></div>
+            <div class="em-auth-login-orb em-auth-login-orb-one"></div>
+            <div class="em-auth-login-orb em-auth-login-orb-two"></div>
+        </div>
+        <div class="em-auth-login-container">
+            <!--- Login Visual --->
+            <div class="em-auth-login-visual">
+                <a href="index.html" class="em-auth-login-logo">
+                    <img src="assets/images/brand-logo.webp" alt="Stackly Events Logo">
+                </a>
+                <div class="em-auth-login-visual-content">
+                    <span class="em-auth-login-visual-label">Welcome Back</span>
+                    <h1>Where Great<br>Events <strong>Begin.</strong></h1>
+                    <p>Step back into your event workspace and continue creating experiences people remember.</p>
+                </div>
+                <div class="em-auth-login-visual-bottom">
+                    <span class="em-auth-login-visual-line"></span>
+                    <span>Event Management Platform</span>
+                </div>
+            </div>
+            <!--- Login Form Area --->
+            <div class="em-auth-login-form-area">
+                <div class="em-auth-login-form-header">
+                    <span class="em-auth-login-kicker">Sign In</span>
+                    <h2>Welcome <strong>Back.</strong></h2>
+                    <p>Choose your account type and enter your details to continue.</p>
+                </div>
+                <!--- Role Selection --->
+                <div class="em-auth-login-role">
+                    <span class="em-auth-login-role-label">Login As <b>*</b></span>
+                    <div class="em-auth-login-role-options">
+                        <label class="em-auth-login-role-option active">
+                            <input type="radio" name="loginRole" value="admin" required>
+                            <span class="em-auth-login-role-card">
+                                <span class="em-auth-login-role-icon"><i class="bi bi-shield-lock"></i></span>
+                                <span class="em-auth-login-role-text">
+                                    <strong>Admin</strong>
+                                    <small>Manage platform</small>
+                                </span>
+                                <span class="em-auth-login-role-check"><i class="bi bi-check2"></i></span>
+                            </span>
+                        </label>
+                        <label class="em-auth-login-role-option">
+                            <input type="radio" name="loginRole" value="client">
+                            <span class="em-auth-login-role-card">
+                                <span class="em-auth-login-role-icon"><i class="bi bi-person"></i></span>
+                                <span class="em-auth-login-role-text">
+                                    <strong>Client</strong>
+                                    <small>Manage your events</small>
+                                </span>
+                                <span class="em-auth-login-role-check"><i class="bi bi-check2"></i></span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <!--- Login Form --->
+                <form class="em-auth-login-form" id="emAuthLoginForm">
+                    <div class="em-auth-login-field">
+                        <label for="emAuthLoginEmail">Email Address <span>*</span></label>
+                        <div class="em-auth-login-input-wrap">
+                            <i class="bi bi-envelope"></i>
+                            <input type="email" id="emAuthLoginEmail" name="email"
+                                placeholder="Enter your email address" autocomplete="email" required>
+                        </div>
+                    </div>
+                    <div class="em-auth-login-field">
+                        <label for="emAuthLoginPassword">Password <span>*</span></label>
+                        <div class="em-auth-login-input-wrap">
+                            <i class="bi bi-lock"></i>
+                            <input type="password" id="emAuthLoginPassword" name="password"
+                                placeholder="Enter your password" autocomplete="current-password" required>
+                            <button type="button" class="em-auth-login-password-toggle" id="emAuthLoginPasswordToggle"
+                                aria-label="Show password">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--- Remember Me / Forgot Password --->
+                    <div class="em-auth-login-options">
+                        <label class="em-auth-login-remember">
+                            <input type="checkbox" id="emAuthLoginRemember">
+                            <span class="em-auth-login-checkmark"></span>
+                            <span>Remember Me</span>
+                        </label>
+                        <a href="forgot-password.html" class="em-auth-login-forgot">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="em-auth-login-submit">
+                        <span>Login</span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+                </form>
+                <!--- Login Footer --->
+                <div class="em-auth-login-footer">
+                    <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+                    <a href="index.html" class="em-auth-login-home">
+                        <i class="bi bi-arrow-left"></i>
+                        <span>Back to Home</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/auth.js"></script>
+</body>
+
+</html>

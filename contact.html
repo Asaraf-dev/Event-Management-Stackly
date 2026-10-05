@@ -1,0 +1,582 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Event Management</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Main favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- webp favicons -->
+  <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+  <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+  <!-- Apple -->
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+  <!-- Android -->
+  <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+  <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+  <!-- Manifest -->
+  <link rel="manifest" href="assets/images/site.webmanifest" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--- Bootstrap Icon --->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/loader.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!--- Loader Start --->
+  <div class="em-ldr" id="emLdrLoader">
+    <div class="em-ldr-glow em-ldr-glow-one"></div>
+    <div class="em-ldr-glow em-ldr-glow-two"></div>
+    <div class="em-ldr-particles" id="emLdrParticles"></div>
+    <div class="em-ldr-content">
+      <div class="em-ldr-mark">
+        <span class="em-ldr-ring em-ldr-ring-one"></span>
+        <span class="em-ldr-ring em-ldr-ring-two"></span>
+        <span class="em-ldr-icon"><i class="bi bi-stars"></i></span>
+      </div>
+      <div class="em-ldr-brand">EVENT<span>.</span></div>
+      <p class="em-ldr-message" id="emLdrMessage">Creating your experience...</p>
+      <div class="em-ldr-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!--- Loader End --->
+
+  <!--- NavBar --->
+  <div id="em-navbar"></div>
+
+  <!--- Hero Section Start --->
+  <section class="em-sub-hero" data-hero-page="contact">
+    <div class="em-sub-hero-grid"></div>
+    <div class="em-sub-hero-glow em-sub-hero-glow-one"></div>
+    <div class="em-sub-hero-glow em-sub-hero-glow-two"></div>
+    <div class="em-sub-hero-orbit em-sub-hero-orbit-one"></div>
+    <div class="em-sub-hero-orbit em-sub-hero-orbit-two"></div>
+    <div class="em-sub-hero-particles" id="emSubHeroParticles"></div>
+    <div class="container em-sub-hero-container">
+      <div class="em-sub-hero-top">
+        <div class="em-sub-hero-breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="bi bi-chevron-right"></i>
+          <span>Contact</span>
+        </div>
+        <span class="em-sub-hero-page-number">03 / 05</span>
+      </div>
+      <div class="em-sub-hero-main">
+        <div class="em-sub-hero-content">
+          <div class="em-sub-hero-eyebrow">
+            <span class="em-sub-hero-eyebrow-line"></span>
+            <span>Let's Connect</span>
+          </div>
+          <h1 class="em-sub-hero-title">Let's Create <span>Something</span> Unforgettable.</h1>
+          <div class="em-sub-hero-actions">
+            <a href="#em-sub-hero-next" class="em-sub-hero-scroll-btn">
+              <span>Explore Page</span>
+              <i class="bi bi-arrow-down"></i>
+            </a>
+            <span class="em-sub-hero-status"><i class="bi bi-stars"></i> Creating unforgettable
+              experiences</span>
+          </div>
+        </div>
+        <div class="em-sub-hero-visual">
+          <div class="em-sub-hero-image-wrap">
+            <div class="em-sub-hero-image-frame">
+              <img src="assets/images/sub-hero-contact.webp" alt="Events" class="em-sub-hero-image">
+            </div>
+            <div class="em-sub-hero-image-label">
+              <span>EST.</span>
+              <strong>2026</strong>
+            </div>
+            <div class="em-sub-hero-floating-card em-sub-hero-card-one">
+              <span class="em-sub-hero-card-icon"><i class="bi bi-stars"></i></span>
+              <span><strong>500+</strong><small>Events Created</small></span>
+            </div>
+            <div class="em-sub-hero-floating-card em-sub-hero-card-two">
+              <span class="em-sub-hero-live-dot"></span>
+              <span>Making moments happen</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="em-sub-hero-bottom">
+        <div class="em-sub-hero-bottom-line"></div>
+        <span>Scroll to discover</span>
+        <div class="em-sub-hero-bottom-icon">
+          <i class="bi bi-arrow-down"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="em-sub-hero-next"></div>
+  <!--- Hero Section End --->
+
+  <!--- Contact Introduction Section Start --->
+  <section class="em-con-intro">
+    <div class="em-con-intro-orb em-con-intro-orb-one"></div>
+    <div class="em-con-intro-orb em-con-intro-orb-two"></div>
+    <div class="container">
+      <div class="em-con-intro-top">
+        <div class="em-con-intro-label">
+          <span class="em-con-intro-label-line"></span>
+          <span>Let's Start A Conversation</span>
+        </div>
+        <span class="em-con-intro-index">01 / CONNECT</span>
+      </div>
+      <div class="em-con-intro-layout">
+        <div class="em-con-intro-heading">
+          <span class="em-con-intro-kicker">Have An Idea?</span>
+          <h2>We Want<br>To <strong>Hear It.</strong></h2>
+        </div>
+        <div class="em-con-intro-content">
+          <p class="em-con-intro-description">Every great event begins with a conversation. Tell us what you're
+            imagining, what you want people to feel, and where you want to take the experience.</p>
+          <p class="em-con-intro-description">Whether you have a complete event plan or just the first idea, our team is
+            ready to help shape it into something meaningful.</p>
+          <div class="em-con-intro-highlight">
+            <div class="em-con-intro-highlight-icon">
+              <i class="bi bi-chat-square-heart"></i>
+            </div>
+            <div class="em-con-intro-highlight-text">
+              <span>Start With An Idea</span>
+              <strong>We'll Help Build The Experience.</strong>
+            </div>
+            <i class="bi bi-headset em-con-intro-highlight-arrow"></i>
+          </div>
+        </div>
+      </div>
+      <div class="em-con-intro-bottom">
+        <div class="em-con-intro-bottom-item">
+          <span class="em-con-intro-bottom-number">01</span>
+          <span>Tell Us</span>
+        </div>
+        <div class="em-con-intro-bottom-line"></div>
+        <div class="em-con-intro-bottom-item">
+          <span class="em-con-intro-bottom-number">02</span>
+          <span>Shape It</span>
+        </div>
+        <div class="em-con-intro-bottom-line"></div>
+        <div class="em-con-intro-bottom-item">
+          <span class="em-con-intro-bottom-number">03</span>
+          <span>Make It Happen</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- Contact Introduction Section End --->
+
+  <!--- Contact Information Section Start --->
+  <section class="em-con-info">
+    <div class="em-con-info-grid"></div>
+    <div class="em-con-info-glow em-con-info-glow-one"></div>
+    <div class="em-con-info-glow em-con-info-glow-two"></div>
+    <div class="container">
+      <div class="em-con-info-top">
+        <div class="em-con-info-label">
+          <span class="em-con-info-label-line"></span>
+          <span>Contact Information</span>
+        </div>
+        <span class="em-con-info-index">02 / REACH US</span>
+      </div>
+      <div class="em-con-info-heading">
+        <div>
+          <span class="em-con-info-kicker">Let's Connect</span>
+          <h2>We're Never<br><strong>Far Away.</strong></h2>
+        </div>
+        <p>Whether you have a question, an event idea, or simply want to start a conversation, reach out to us through
+          any of the channels below.</p>
+      </div>
+      <div class="em-con-info-cards">
+        <a class="em-con-info-card">
+          <div class="em-con-info-card-top">
+            <span class="em-con-info-card-number">01</span>
+            <span class="em-con-info-card-icon"><i class="bi bi-envelope"></i></span>
+          </div>
+          <div class="em-con-info-card-content">
+            <span class="em-con-info-card-label">Email Us</span>
+            <h3>hello@stackly.com</h3>
+            <p>Send us your ideas, questions, or event requirements.</p>
+          </div>
+          <div class="em-con-info-card-bottom e-mail">
+            <span>Send An Email</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </div>
+        </a>
+        <a class="em-con-info-card">
+          <div class="em-con-info-card-top">
+            <span class="em-con-info-card-number">02</span>
+            <span class="em-con-info-card-icon"><i class="bi bi-telephone"></i></span>
+          </div>
+          <div class="em-con-info-card-content">
+            <span class="em-con-info-card-label">Call Us</span>
+            <h3>+91 98765 43210</h3>
+            <p>Prefer a conversation? Give our team a call directly.</p>
+          </div>
+          <div class="em-con-info-card-bottom phone">
+            <span>Call Our Team</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </div>
+        </a>
+        <a rel="noopener noreferrer" class="em-con-info-card">
+          <div class="em-con-info-card-top">
+            <span class="em-con-info-card-number">03</span>
+            <span class="em-con-info-card-icon"><i class="bi bi-geo-alt"></i></span>
+          </div>
+          <div class="em-con-info-card-content">
+            <span class="em-con-info-card-label">Visit Us</span>
+            <h3>Salem, Tamil Nadu</h3>
+            <p>MMR Complex, Chinna Thirupathi, Salem, Tamil Nadu 636008.</p>
+          </div>
+          <div class="em-con-info-card-bottom map">
+            <span>Get Directions</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </div>
+        </a>
+      </div>
+      <div class="em-con-info-footer">
+        <div class="em-con-info-status">
+          <span class="em-con-info-status-dot"></span>
+          <span>Available For New Events</span>
+        </div>
+        <div class="em-con-info-social">
+          <span>Follow Our Journey</span>
+          <a href="404.html" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="404.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="404.html" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- Contact Information Section End --->
+
+  <!--- Main Contact / Event Enquiry Form Section Start --->
+  <section class="em-con-enquiry">
+    <div class="em-con-enquiry-orb em-con-enquiry-orb-one"></div>
+    <div class="em-con-enquiry-orb em-con-enquiry-orb-two"></div>
+    <div class="container">
+      <div class="em-con-enquiry-top">
+        <div class="em-con-enquiry-label">
+          <span class="em-con-enquiry-label-line"></span>
+          <span>Event Enquiry</span>
+        </div>
+        <span class="em-con-enquiry-index">03 / LET'S TALK</span>
+      </div>
+      <div class="em-con-enquiry-heading">
+        <div>
+          <span class="em-con-enquiry-kicker">Start Your Event</span>
+          <h2>Let's Make<br>Something <strong>Unforgettable.</strong></h2>
+        </div>
+        <p>Tell us a little about your event and what you're imagining. Our team will review your enquiry and get back
+          to you with the next steps.</p>
+      </div>
+      <div class="em-con-enquiry-layout">
+        <div class="em-con-enquiry-side">
+          <div class="em-con-enquiry-side-number">03</div>
+          <div class="em-con-enquiry-side-content">
+            <span>Event Enquiry</span>
+            <h3>Your idea.<br>Our expertise.</h3>
+            <p>From intimate celebrations to large-scale experiences, share your requirements and let us start shaping
+              the possibilities together.</p>
+          </div>
+          <div class="em-con-enquiry-side-bottom">
+            <span class="em-con-enquiry-side-line"></span>
+            <span>We respond within 1 business day</span>
+          </div>
+        </div>
+        <div class="em-con-enquiry-form-wrap">
+          <form class="em-con-enquiry-form" id="emConEnquiryForm">
+            <div class="em-con-enquiry-form-header">
+              <span>01</span>
+              <div>
+                <h3>Tell Us About Your Event</h3>
+                <p>All fields are required.</p>
+              </div>
+            </div>
+            <div class="em-con-enquiry-fields">
+              <div class="em-con-enquiry-field em-con-enquiry-field-half">
+                <label for="emConEnquiryName">Full Name <span>*</span></label>
+                <input type="text" id="emConEnquiryName" name="name" placeholder="Enter your full name" required
+                  pattern="[A-Za-z ]+" title="Please enter alphabets only.">
+              </div>
+              <div class="em-con-enquiry-field em-con-enquiry-field-half">
+                <label for="emConEnquiryEmail">Email Address <span>*</span></label>
+                <input type="email" id="emConEnquiryEmail" name="email" placeholder="you@example.com" required>
+              </div>
+              <div class="em-con-enquiry-field em-con-enquiry-field-half">
+                <label for="emConEnquiryPhone">Phone Number <span>*</span></label>
+                <input type="tel" id="emConEnquiryPhone" name="phone" placeholder="10 digit phone number" required
+                  pattern="[0-9]{10}" minlength="10" maxlength="10" inputmode="numeric"
+                  title="Please enter exactly 10 digits.">
+              </div>
+              <div class="em-con-enquiry-field em-con-enquiry-field-half">
+                <label for="emConEnquiryType">Event Type <span>*</span></label>
+                <select id="emConEnquiryType" name="event_type" required>
+                  <option value="" selected disabled>Select event type</option>
+                  <option value="Corporate Event">Corporate Event</option>
+                  <option value="Conference">Conference</option>
+                  <option value="Music & Concert">Music & Concert</option>
+                  <option value="Wedding & Celebration">Wedding & Celebration</option>
+                  <option value="Workshop">Workshop</option>
+                  <option value="Private Event">Private Event</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="em-con-enquiry-field em-con-enquiry-field-half">
+                <label for="emConEnquiryDate">Event Date <span>*</span></label>
+                <input type="date" id="emConEnquiryDate" name="event_date" required>
+              </div>
+              <div class="em-con-enquiry-field em-con-enquiry-field-half">
+                <label for="emConEnquiryGuests">Expected Guests <span>*</span></label>
+                <input type="number" id="emConEnquiryGuests" name="guests" placeholder="Number of guests" min="1"
+                  required>
+              </div>
+              <div class="em-con-enquiry-field em-con-enquiry-field-full">
+                <label for="emConEnquiryMessage">Tell Us More <span>*</span></label>
+                <textarea id="emConEnquiryMessage" name="message" rows="6"
+                  placeholder="Tell us about your event, vision, location, requirements or anything else you'd like us to know..."
+                  required></textarea>
+              </div>
+            </div>
+            <div class="em-con-enquiry-submit">
+              <div class="em-con-enquiry-submit-note">
+                <i class="bi bi-shield-check"></i>
+                <span>Your information is kept private and secure.</span>
+              </div>
+              <button type="submit" class="em-con-enquiry-submit-btn">
+                <span>Send Enquiry</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- Enquiry Confirmation Popup --->
+  <div class="em-con-enquiry-modal" id="emConEnquiryModal" aria-hidden="true">
+    <div class="em-con-enquiry-modal-backdrop"></div>
+    <div class="em-con-enquiry-modal-card" role="dialog" aria-modal="true" aria-labelledby="emConEnquiryModalTitle">
+      <button type="button" class="em-con-enquiry-modal-close" id="emConEnquiryModalClose" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <div class="em-con-enquiry-modal-icon">
+        <i class="bi bi-check2"></i>
+      </div>
+      <span class="em-con-enquiry-modal-label">Enquiry Received</span>
+      <h3 id="emConEnquiryModalTitle">Your Message Has Been Sent.</h3>
+      <p>Thank you for reaching out. Our team will review your enquiry and get back to you shortly.</p>
+      <button type="button" class="em-con-enquiry-modal-btn" id="emConEnquiryModalDone">
+        <span>Done</span>
+        <i class="bi bi-arrow-up-right"></i>
+      </button>
+    </div>
+  </div>
+  <!--- Main Contact / Event Enquiry Form Section End --->
+
+  <!--- Map Section Start --->
+<section class="em-con-location">
+    <div class="em-con-location-grid"></div>
+    <div class="em-con-location-glow em-con-location-glow-one"></div>
+    <div class="em-con-location-glow em-con-location-glow-two"></div>
+    <div class="container">
+        <div class="em-con-location-top">
+            <div class="em-con-location-label">
+                <span class="em-con-location-label-line"></span>
+                <span>Find Us</span>
+            </div>
+            <span class="em-con-location-index">06 / OUR LOCATION</span>
+        </div>
+        <div class="em-con-location-heading">
+            <div>
+                <span class="em-con-location-kicker">Come Say Hello</span>
+                <h2>Find Us<br>In <strong>Salem.</strong></h2>
+            </div>
+            <p>Our doors are open for conversations, ideas, planning sessions, and everything that turns an event concept into a real experience.</p>
+        </div>
+        <div class="em-con-location-layout">
+            <div class="em-con-location-map-wrap">
+                <div class="em-con-location-map">
+                    <iframe src="https://www.google.com/maps?q=MMR+Complex+Chinna+Thirupathi+Salem+Tamil+Nadu+636008&output=embed" title="MMR Complex Chinna Thirupathi Salem location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="em-con-location-map-overlay"></div>
+                    <div class="em-con-location-map-pin">
+                        <span class="em-con-location-pin-pulse"></span>
+                        <span class="em-con-location-pin-icon"><i class="bi bi-geo-alt-fill"></i></span>
+                    </div>
+                    <div class="em-con-location-map-label">
+                        <span class="em-con-location-map-label-dot"></span>
+                        <span>Our Location</span>
+                    </div>
+                </div>
+            </div>
+            <div class="em-con-location-content">
+                <div class="em-con-location-number">06</div>
+                <div class="em-con-location-content-main">
+                    <span class="em-con-location-content-label">Visit Our Studio</span>
+                    <h3>MMR Complex<br>Chinna Thirupathi</h3>
+                    <p class="em-con-location-address">Salem, Tamil Nadu<br>India — 636008</p>
+                    <div class="em-con-location-divider"></div>
+                    <div class="em-con-location-details">
+                        <div class="em-con-location-detail">
+                            <span class="em-con-location-detail-icon"><i class="bi bi-geo-alt"></i></span>
+                            <div>
+                                <span>Location</span>
+                                <strong>Salem, Tamil Nadu</strong>
+                            </div>
+                        </div>
+                        <div class="em-con-location-detail">
+                            <span class="em-con-location-detail-icon"><i class="bi bi-clock"></i></span>
+                            <div>
+                                <span>Availability</span>
+                                <strong>Mon — Sat / 09:00 — 18:00</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=MMR+Complex+Chinna+Thirupathi+Salem+Tamil+Nadu+636008" target="_blank" rel="noopener noreferrer" class="em-con-location-btn">
+                        <span>Open In Google Maps</span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="em-con-location-bottom">
+            <div class="em-con-location-bottom-line"></div>
+            <span>Salem · Tamil Nadu · India</span>
+            <div class="em-con-location-bottom-line"></div>
+        </div>
+    </div>
+</section>
+  <!--- Map Section End --->
+
+  <!--- Quick FAQ Section Start --->
+<section class="em-con-quick-faq">
+    <div class="em-con-quick-faq-glow em-con-quick-faq-glow-one"></div>
+    <div class="em-con-quick-faq-glow em-con-quick-faq-glow-two"></div>
+    <div class="container">
+        <div class="em-con-quick-faq-top">
+            <div class="em-con-quick-faq-label">
+                <span class="em-con-quick-faq-label-line"></span>
+                <span>Quick FAQ</span>
+            </div>
+            <span class="em-con-quick-faq-index">07 / QUESTIONS</span>
+        </div>
+        <div class="em-con-quick-faq-heading">
+            <div>
+                <span class="em-con-quick-faq-kicker">Before We Begin</span>
+                <h2>A Few Things<br>You May <strong>Wonder.</strong></h2>
+            </div>
+            <p>Got a quick question before reaching out? Here are a few things our clients commonly ask.</p>
+        </div>
+        <div class="em-con-quick-faq-layout">
+            <div class="em-con-quick-faq-intro">
+                <div class="em-con-quick-faq-intro-icon">
+                    <i class="bi bi-chat-square-text"></i>
+                </div>
+                <span class="em-con-quick-faq-intro-label">Need More Answers?</span>
+                <h3>Still Have<br>A Question?</h3>
+                <p>Can't find what you're looking for? Our team is happy to talk through your event requirements.</p>
+                <a href="#emConEnquiryForm" class="em-con-quick-faq-contact">
+                    <span>Ask Our Team</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
+            <div class="em-con-quick-faq-list">
+                <div class="em-con-quick-faq-item active">
+                    <button type="button" class="em-con-quick-faq-question" aria-expanded="true">
+                        <span class="em-con-quick-faq-number">01</span>
+                        <span class="em-con-quick-faq-question-text">How early should I contact you for an event?</span>
+                        <span class="em-con-quick-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                    <div class="em-con-quick-faq-answer">
+                        <p>We recommend reaching out as early as possible so there is enough time for planning, venue coordination, creative development, vendors, and production.</p>
+                    </div>
+                </div>
+                <div class="em-con-quick-faq-item">
+                    <button type="button" class="em-con-quick-faq-question" aria-expanded="false">
+                        <span class="em-con-quick-faq-number">02</span>
+                        <span class="em-con-quick-faq-question-text">What types of events do you manage?</span>
+                        <span class="em-con-quick-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                    <div class="em-con-quick-faq-answer">
+                        <p>We work across corporate events, conferences, celebrations, concerts, workshops, private events, and other custom experiences.</p>
+                    </div>
+                </div>
+                <div class="em-con-quick-faq-item">
+                    <button type="button" class="em-con-quick-faq-question" aria-expanded="false">
+                        <span class="em-con-quick-faq-number">03</span>
+                        <span class="em-con-quick-faq-question-text">Can you manage the complete event?</span>
+                        <span class="em-con-quick-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                    <div class="em-con-quick-faq-answer">
+                        <p>Yes. Depending on your requirements, we can support the complete journey from initial concept and planning through production, coordination, execution, and event-day management.</p>
+                    </div>
+                </div>
+                <div class="em-con-quick-faq-item">
+                    <button type="button" class="em-con-quick-faq-question" aria-expanded="false">
+                        <span class="em-con-quick-faq-number">04</span>
+                        <span class="em-con-quick-faq-question-text">Can I approach you with just an idea?</span>
+                        <span class="em-con-quick-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                    <div class="em-con-quick-faq-answer">
+                        <p>Absolutely. You don't need to have everything figured out. Share your initial idea with us and we'll help shape it into a practical event concept.</p>
+                    </div>
+                </div>
+                <div class="em-con-quick-faq-item">
+                    <button type="button" class="em-con-quick-faq-question" aria-expanded="false">
+                        <span class="em-con-quick-faq-number">05</span>
+                        <span class="em-con-quick-faq-question-text">How do I get started?</span>
+                        <span class="em-con-quick-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                    <div class="em-con-quick-faq-answer">
+                        <p>Simply send us your event enquiry through the form above. Tell us what you're planning, your expected date, guest count, and any initial requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!--- Quick FAQ Section End --->
+
+
+  <!--- Footer --->
+  <div id="em-footer"></div>
+
+  <!--- Js Files --->
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+
+  <!-- Page JS -->
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/all-hero.js"></script>
+</body>
+
+</html>

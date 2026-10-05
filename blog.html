@@ -1,0 +1,496 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Event Management</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Main favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- webp favicons -->
+  <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+  <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+  <!-- Apple -->
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+  <!-- Android -->
+  <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+  <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+  <!-- Manifest -->
+  <link rel="manifest" href="assets/images/site.webmanifest" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--- Bootstrap Icon --->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/loader.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!--- Loader Start --->
+  <div class="em-ldr" id="emLdrLoader">
+    <div class="em-ldr-glow em-ldr-glow-one"></div>
+    <div class="em-ldr-glow em-ldr-glow-two"></div>
+    <div class="em-ldr-particles" id="emLdrParticles"></div>
+    <div class="em-ldr-content">
+      <div class="em-ldr-mark">
+        <span class="em-ldr-ring em-ldr-ring-one"></span>
+        <span class="em-ldr-ring em-ldr-ring-two"></span>
+        <span class="em-ldr-icon"><i class="bi bi-stars"></i></span>
+      </div>
+      <div class="em-ldr-brand">EVENT<span>.</span></div>
+      <p class="em-ldr-message" id="emLdrMessage">Creating your experience...</p>
+      <div class="em-ldr-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!--- Loader End --->
+
+  <!--- NavBar --->
+  <div id="em-navbar"></div>
+
+
+  <!--- Hero Section Start --->
+  <section class="em-sub-hero" data-hero-page="blog">
+    <div class="em-sub-hero-grid"></div>
+    <div class="em-sub-hero-glow em-sub-hero-glow-one"></div>
+    <div class="em-sub-hero-glow em-sub-hero-glow-two"></div>
+    <div class="em-sub-hero-orbit em-sub-hero-orbit-one"></div>
+    <div class="em-sub-hero-orbit em-sub-hero-orbit-two"></div>
+    <div class="em-sub-hero-particles" id="emSubHeroParticles"></div>
+    <div class="container em-sub-hero-container">
+      <div class="em-sub-hero-top">
+        <div class="em-sub-hero-breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="bi bi-chevron-right"></i>
+          <span>Blog</span>
+        </div>
+        <span class="em-sub-hero-page-number">03 / 05</span>
+      </div>
+      <div class="em-sub-hero-main">
+        <div class="em-sub-hero-content">
+          <div class="em-sub-hero-eyebrow">
+            <span class="em-sub-hero-eyebrow-line"></span>
+            <span>Ideas & Insights</span>
+          </div>
+          <h1 class="em-sub-hero-title">Stories Behind <span>The Moments.</span></h1>
+          <div class="em-sub-hero-actions">
+            <a href="#em-sub-hero-next" class="em-sub-hero-scroll-btn">
+              <span>Explore Page</span>
+              <i class="bi bi-arrow-down"></i>
+            </a>
+            <span class="em-sub-hero-status"><i class="bi bi-stars"></i> Creating unforgettable
+              experiences</span>
+          </div>
+        </div>
+        <div class="em-sub-hero-visual">
+          <div class="em-sub-hero-image-wrap">
+            <div class="em-sub-hero-image-frame">
+              <img src="assets/images/sub-hero-blog.webp" alt="Events" class="em-sub-hero-image">
+            </div>
+            <div class="em-sub-hero-image-label">
+              <span>EST.</span>
+              <strong>2026</strong>
+            </div>
+            <div class="em-sub-hero-floating-card em-sub-hero-card-one">
+              <span class="em-sub-hero-card-icon"><i class="bi bi-stars"></i></span>
+              <span><strong>500+</strong><small>Events Created</small></span>
+            </div>
+            <div class="em-sub-hero-floating-card em-sub-hero-card-two">
+              <span class="em-sub-hero-live-dot"></span>
+              <span>Making moments happen</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="em-sub-hero-bottom">
+        <div class="em-sub-hero-bottom-line"></div>
+        <span>Scroll to discover</span>
+        <div class="em-sub-hero-bottom-icon">
+          <i class="bi bi-arrow-down"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="em-sub-hero-next"></div>
+  <!--- Hero Section End --->
+
+  <!--- Featured Story Section Start --->
+  <section class="em-blg-featured">
+    <div class="em-blg-featured-bg"></div>
+    <div class="container">
+      <div class="em-blg-featured-top">
+        <div class="em-blg-featured-label">
+          <span class="em-blg-featured-label-line"></span>
+          <span>Featured Story</span>
+        </div>
+        <span class="em-blg-featured-index">01 / FEATURED</span>
+      </div>
+      <div class="em-blg-featured-wrap">
+        <div class="em-blg-featured-visual">
+          <div class="em-blg-featured-image-wrap">
+            <img src="assets/images/blog-featured.webp" alt="Featured Event Story" class="em-blg-featured-image">
+            <div class="em-blg-featured-image-overlay"></div>
+            <div class="em-blg-featured-image-tag">
+              <i class="bi bi-stars"></i>
+              <span>Editor's Pick</span>
+            </div>
+            <div class="em-blg-featured-image-number">01</div>
+          </div>
+        </div>
+        <div class="em-blg-featured-content">
+          <div class="em-blg-featured-meta">
+            <span>Event Design</span>
+            <span class="em-blg-featured-meta-dot"></span>
+            <span>8 Min Read</span>
+          </div>
+          <h2>How To Design An Event People <strong>Remember.</strong></h2>
+          <p class="em-blg-featured-description">A memorable event is more than a beautiful space. It is a carefully
+            designed journey where every detail, interaction, and emotion has a purpose.</p>
+          <div class="em-blg-featured-details">
+            <div class="em-blg-featured-author">
+              <div class="em-blg-featured-author-avatar">
+                <img src="assets/images/team-1.webp" alt="Arun Kumar">
+              </div>
+              <div class="em-blg-featured-author-info">
+                <span>Written By</span>
+                <strong>Arun Kumar</strong>
+              </div>
+            </div>
+            <span class="em-blg-featured-date">Oct 01, 2026</span>
+          </div>
+          <a href="404.html" class="em-blg-featured-btn">
+            <span>Read Full Story</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+          <div class="em-blg-featured-bottom-line"></div>
+          <div class="em-blg-featured-bottom">
+            <span>Ideas · Experiences · Inspiration</span>
+            <i class="bi bi-arrow-down-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- Featured Story Section End --->
+
+  <!--- Latest Insights Section Start --->
+  <section class="em-blg-latest">
+    <div class="em-blg-latest-grid"></div>
+    <div class="em-blg-latest-glow em-blg-latest-glow-one"></div>
+    <div class="em-blg-latest-glow em-blg-latest-glow-two"></div>
+    <div class="container">
+      <div class="em-blg-latest-header">
+        <div class="em-blg-latest-heading">
+          <div class="em-blg-latest-label">
+            <span class="em-blg-latest-label-line"></span>
+            <span>Latest Insights</span>
+          </div>
+          <h2>Ideas, Trends &amp;<br><strong>Event Inspiration.</strong></h2>
+        </div>
+        <div class="em-blg-latest-intro">
+          <span>02 / JOURNAL</span>
+          <p>Fresh perspectives, practical ideas, and stories from the world of events and experiences.</p>
+        </div>
+      </div>
+      <div class="em-blg-latest-toolbar">
+        <div class="em-blg-latest-filters">
+          <button type="button" class="em-blg-latest-filter active" data-filter="all">All</button>
+          <button type="button" class="em-blg-latest-filter" data-filter="planning">Planning</button>
+          <button type="button" class="em-blg-latest-filter" data-filter="design">Event Design</button>
+          <button type="button" class="em-blg-latest-filter" data-filter="corporate">Corporate</button>
+          <button type="button" class="em-blg-latest-filter" data-filter="trends">Trends</button>
+          <button type="button" class="em-blg-latest-filter" data-filter="technology">Technology</button>
+        </div>
+        <div class="em-blg-latest-search">
+          <i class="bi bi-search"></i>
+          <input type="search" id="emBlgLatestSearch" placeholder="Search insights..." aria-label="Search insights">
+        </div>
+      </div>
+      <div class="em-blg-latest-list">
+        <article class="em-blg-latest-card em-blg-latest-card-featured" data-category="design"
+          data-title="How To Create An Event Atmosphere People Remember">
+          <div class="em-blg-latest-card-image">
+            <img src="assets/images/category-corporate.webp" alt="Event atmosphere design">
+            <span class="em-blg-latest-card-category">Event Design</span>
+            <span class="em-blg-latest-card-number">01</span>
+          </div>
+          <div class="em-blg-latest-card-content">
+            <div class="em-blg-latest-card-meta">
+              <span>Oct 01, 2026</span>
+              <span class="em-blg-latest-meta-dot"></span>
+              <span>7 Min Read</span>
+            </div>
+            <h3>How To Create An Event Atmosphere People Remember</h3>
+            <p>The details that transform a venue into an experience and make guests feel part of something bigger.</p>
+            <a href="404.html" class="em-blg-latest-read">Read Story <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </article>
+        <article class="em-blg-latest-card" data-category="trends"
+          data-title="10 Event Trends Shaping The Future Of Experiences">
+          <div class="em-blg-latest-card-image">
+            <img src="assets/images/blog-insight-trends.webp" alt="Event trends">
+            <span class="em-blg-latest-card-category">Trends</span>
+            <span class="em-blg-latest-card-number">02</span>
+          </div>
+          <div class="em-blg-latest-card-content">
+            <div class="em-blg-latest-card-meta">
+              <span>Sep 28, 2026</span>
+              <span class="em-blg-latest-meta-dot"></span>
+              <span>6 Min Read</span>
+            </div>
+            <h3>10 Event Trends Shaping The Future Of Experiences</h3>
+            <p>Discover the ideas and experiences changing how modern events are imagined and delivered.</p>
+            <a href="404.html" class="em-blg-latest-read">Read Story <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </article>
+        <article class="em-blg-latest-card" data-category="planning"
+          data-title="The Complete Guide To Planning A Seamless Event">
+          <div class="em-blg-latest-card-image">
+            <img src="assets/images/create-featured.webp" alt="Event planning">
+            <span class="em-blg-latest-card-category">Planning</span>
+            <span class="em-blg-latest-card-number">03</span>
+          </div>
+          <div class="em-blg-latest-card-content">
+            <div class="em-blg-latest-card-meta">
+              <span>Sep 24, 2026</span>
+              <span class="em-blg-latest-meta-dot"></span>
+              <span>8 Min Read</span>
+            </div>
+            <h3>The Complete Guide To Planning A Seamless Event</h3>
+            <p>A practical look at the planning decisions that keep complex events moving with confidence.</p>
+            <a href="404.html" class="em-blg-latest-read">Read Story <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </article>
+        <article class="em-blg-latest-card" data-category="corporate"
+          data-title="How To Design Corporate Events People Actually Enjoy">
+          <div class="em-blg-latest-card-image">
+            <img src="assets/images/create-hospitality.webp" alt="Corporate event">
+            <span class="em-blg-latest-card-category">Corporate</span>
+            <span class="em-blg-latest-card-number">04</span>
+          </div>
+          <div class="em-blg-latest-card-content">
+            <div class="em-blg-latest-card-meta">
+              <span>Sep 19, 2026</span>
+              <span class="em-blg-latest-meta-dot"></span>
+              <span>5 Min Read</span>
+            </div>
+            <h3>How To Design Corporate Events People Actually Enjoy</h3>
+            <p>Moving beyond schedules and presentations to create meaningful experiences for every attendee.</p>
+            <a href="404.html" class="em-blg-latest-read">Read Story <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </article>
+        <article class="em-blg-latest-card" data-category="technology"
+          data-title="How Technology Is Changing Live Events">
+          <div class="em-blg-latest-card-image">
+            <img src="assets/images/sub-hero-contact.webp" alt="Event technology">
+            <span class="em-blg-latest-card-category">Technology</span>
+            <span class="em-blg-latest-card-number">05</span>
+          </div>
+          <div class="em-blg-latest-card-content">
+            <div class="em-blg-latest-card-meta">
+              <span>Sep 15, 2026</span>
+              <span class="em-blg-latest-meta-dot"></span>
+              <span>6 Min Read</span>
+            </div>
+            <h3>How Technology Is Changing Live Events</h3>
+            <p>From interactive environments to smarter event operations, technology is redefining experiences.</p>
+            <a href="404.html" class="em-blg-latest-read">Read Story <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </article>
+        <article class="em-blg-latest-card" data-category="planning"
+          data-title="Building An Event Around Your Audience">
+          <div class="em-blg-latest-card-image">
+            <img src="assets/images/hero-main.webp" alt="Audience focused event">
+            <span class="em-blg-latest-card-category">Planning</span>
+            <span class="em-blg-latest-card-number">06</span>
+          </div>
+          <div class="em-blg-latest-card-content">
+            <div class="em-blg-latest-card-meta">
+              <span>Sep 11, 2026</span>
+              <span class="em-blg-latest-meta-dot"></span>
+              <span>4 Min Read</span>
+            </div>
+            <h3>Building An Event Around Your Audience</h3>
+            <p>Why understanding your guests should influence every creative and strategic event decision.</p>
+            <a href="404.html" class="em-blg-latest-read">Read Story <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </article>
+        <!--- Insight Card 07 --->
+        <article class="em-blg-latest-card" data-category="trends"
+          data-title="The Art Of Creating Unforgettable Guest Experiences">
+          <div class="em-blg-latest-card-image">
+            <img src="assets/images/create-entertainment.webp" alt="Guest experience at an event">
+            <span class="em-blg-latest-card-category">Trends</span>
+            <span class="em-blg-latest-card-number">07</span>
+          </div>
+          <div class="em-blg-latest-card-content">
+            <div class="em-blg-latest-card-meta">
+              <span>Sep 07, 2026</span>
+              <span class="em-blg-latest-meta-dot"></span>
+              <span>5 Min Read</span>
+            </div>
+            <h3>The Art Of Creating Unforgettable Guest Experiences</h3>
+            <p>Discover how thoughtful details, personal touches, and meaningful interactions can turn an ordinary event
+              into a lasting memory.</p>
+            <a href="404.html" class="em-blg-latest-read">Read Story <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="em-blg-latest-empty" id="emBlgLatestEmpty">
+        <i class="bi bi-search"></i>
+        <h3>No Insights Found</h3>
+        <p>Try another category or search term.</p>
+        <button type="button" id="emBlgLatestReset">View All Insights</button>
+      </div>
+      <div class="em-blg-latest-footer">
+        <span>More stories coming soon</span>
+        <div class="em-blg-latest-footer-line"></div>
+        <i class="bi bi-dot"></i>
+      </div>
+    </div>
+  </section>
+  <!--- Latest Insights Section End --->
+
+  <!--- Newsletter / Stay Inspired Section Start --->
+  <section class="em-blg-subscribe">
+    <div class="em-blg-subscribe-orb em-blg-subscribe-orb-one"></div>
+    <div class="em-blg-subscribe-orb em-blg-subscribe-orb-two"></div>
+    <div class="container">
+      <div class="em-blg-subscribe-wrap">
+        <div class="em-blg-subscribe-top">
+          <div class="em-blg-subscribe-label">
+            <span class="em-blg-subscribe-label-line"></span>
+            <span>Stay Inspired</span>
+          </div>
+          <span class="em-blg-subscribe-index">03 / CONNECT</span>
+        </div>
+        <div class="em-blg-subscribe-content">
+          <div class="em-blg-subscribe-copy">
+            <span class="em-blg-subscribe-kicker">The Event Journal</span>
+            <h2>Ideas Worth<br><strong>Knowing.</strong></h2>
+            <p>Get fresh event ideas, creative inspiration, industry trends, and practical insights delivered straight
+              to your inbox.</p>
+            <div class="em-blg-subscribe-points">
+              <span><i class="bi bi-check2"></i> Event Inspiration</span>
+              <span><i class="bi bi-check2"></i> Industry Trends</span>
+              <span><i class="bi bi-check2"></i> Creative Insights</span>
+            </div>
+          </div>
+          <div class="em-blg-subscribe-form-wrap">
+            <div class="em-blg-subscribe-form-card">
+              <div class="em-blg-subscribe-form-icon">
+                <i class="bi bi-envelope-paper"></i>
+              </div>
+              <div class="em-blg-subscribe-form-heading">
+                <span>Join The Journal</span>
+                <p>One thoughtful email. No unnecessary noise.</p>
+              </div>
+              <form class="em-blg-subscribe-form" id="emBlgSubscribeForm" novalidate>
+                <div class="em-blg-subscribe-input-wrap">
+                  <i class="bi bi-envelope"></i>
+                  <input type="email" id="emBlgSubscribeEmail" placeholder="Enter your email address"
+                    autocomplete="email" required>
+                </div>
+                <span class="em-blg-subscribe-error" id="emBlgSubscribeError"></span>
+                <button type="submit" class="em-blg-subscribe-btn">
+                  <span>Subscribe</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </form>
+              <div class="em-blg-subscribe-note">
+                <i class="bi bi-shield-check"></i>
+                <span>Your email stays private. Unsubscribe anytime.</span>
+              </div>
+            </div>
+            <div class="em-blg-subscribe-decoration">
+              <span>CREATE</span>
+              <span>INSPIRE</span>
+              <span>EXPERIENCE</span>
+            </div>
+          </div>
+        </div>
+        <div class="em-blg-subscribe-bottom">
+          <span>Ideas · Experiences · Stories</span>
+          <div class="em-blg-subscribe-bottom-line"></div>
+          <i class="bi bi-arrow-down-right"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- Subscription Confirmation Modal --->
+  <div class="em-blg-subscribe-modal" id="emBlgSubscribeModal" aria-hidden="true">
+    <div class="em-blg-subscribe-modal-backdrop"></div>
+    <div class="em-blg-subscribe-modal-card" role="dialog" aria-modal="true" aria-labelledby="emBlgSubscribeModalTitle">
+      <button type="button" class="em-blg-subscribe-modal-close" id="emBlgSubscribeModalClose" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <div class="em-blg-subscribe-modal-icon">
+        <i class="bi bi-envelope-check"></i>
+      </div>
+      <div class="em-blg-subscribe-modal-content" id="emBlgSubscribeModalContent">
+        <span class="em-blg-subscribe-modal-label">Confirm Subscription</span>
+        <h3 id="emBlgSubscribeModalTitle">Stay In The Loop.</h3>
+        <p>You're about to subscribe to our Event Journal using:</p>
+        <strong class="em-blg-subscribe-modal-email" id="emBlgSubscribeModalEmail"></strong>
+        <div class="em-blg-subscribe-modal-actions">
+          <button type="button" class="em-blg-subscribe-modal-cancel" id="emBlgSubscribeModalCancel">Cancel</button>
+          <button type="button" class="em-blg-subscribe-modal-confirm" id="emBlgSubscribeModalConfirm">
+            <span>Confirm Subscription</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="em-blg-subscribe-modal-success" id="emBlgSubscribeModalSuccess">
+        <div class="em-blg-subscribe-success-icon">
+          <i class="bi bi-check-lg"></i>
+        </div>
+        <span class="em-blg-subscribe-modal-label">Subscription Confirmed</span>
+        <h3>You're In.</h3>
+        <p>Welcome to the Event Journal. We'll bring fresh ideas and inspiration to your inbox.</p>
+        <button type="button" class="em-blg-subscribe-success-btn" id="emBlgSubscribeSuccessClose">Done</button>
+      </div>
+    </div>
+  </div>
+  <!--- Newsletter / Stay Inspired Section End --->
+
+  <!--- Footer --->
+  <div id="em-footer"></div>
+
+  <!--- Js Files --->
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+
+  <!-- Page JS -->
+  <script src="assets/js/blog.js"></script>
+  <script src="assets/js/all-hero.js"></script>
+</body>
+
+</html>

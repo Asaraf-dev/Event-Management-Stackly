@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Stackly Events</title>
+    <link rel="icon" href="assets/images/brand-logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+    <!--- Dashboard --->
+    <main class="em-dash">
+        <!--- Sidebar --->
+        <aside class="em-dash-sidebar" id="emDashSidebar">
+            <div class="em-dash-sidebar-top">
+                <a href="index.html" class="em-dash-logo">
+                    <img src="assets/images/brand-logo.webp" alt="Stackly Events">
+                </a>
+                <!--- Mobile Sidebar Profile --->
+                <div class="em-dash-mobile-profile">
+                    <div class="em-dash-mobile-profile-image">
+                        <img src="assets/images/profile-1.webp" alt="Profile">
+                    </div>
+                    <div class="em-dash-mobile-profile-info">
+                        <span>Signed In As</span>
+                        <strong id="emDashMobileEmail">Loading...</strong>
+                    </div>
+                </div>
+            </div>
+            <!--- Sidebar Navigation --->
+            <nav class="em-dash-sidebar-nav">
+                <span class="em-dash-nav-label">Workspace</span>
+                <a href="admin-dashboard.html" class="em-dash-nav-link ">
+                    <i class="bi bi-grid-1x2"></i>
+                    <span>Overview</span>
+                </a>
+                <a href="admin-analytics.html" class="em-dash-nav-link active">
+                    <i class="bi bi-bar-chart"></i>
+                    <span>Analytics</span>
+                </a>
+                <a href="admin-events.html" class="em-dash-nav-link">
+                    <i class="bi bi-calendar-event"></i>
+                    <span>Events</span>
+                </a>
+                <a href="admin-profile.html" class="em-dash-nav-link">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="em-dash-nav-link em-dash-logout" id="emDashLogout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+            <div class="em-dash-sidebar-bottom">
+                <span>Stackly Events</span>
+                <small>Event Management Platform</small>
+            </div>
+        </aside>
+        <!--- Sidebar Overlay --->
+        <div class="em-dash-overlay" id="emDashOverlay"></div>
+        <!--- Dashboard Main --->
+        <div class="em-dash-main">
+            <!--- Topbar --->
+            <header class="em-dash-topbar">
+                <div class="em-dash-topbar-left">
+                    <button type="button" class="em-dash-menu-btn" id="emDashMenuBtn" aria-label="Open menu">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <div class="em-dash-title">
+                        <span>Workspace</span>
+                        <h1>Analytics Dashboard</h1>
+                    </div>
+                </div>
+                <div class="em-dash-topbar-right">
+                    <div class="em-dash-email">
+                        <span>Signed In As</span>
+                        <strong id="emDashEmail">Loading...</strong>
+                    </div>
+                    <div class="em-dash-profile">
+                        <img src="assets/images/profile-1.webp" alt="Profile">
+                        <span class="em-dash-profile-status"></span>
+                    </div>
+                </div>
+            </header>
+            <!--- Dashboard Content --->
+
+            <!--- Dashboard Content --->
+            <section class="em-dash-content">
+                <!--- Analytics Header --->
+                <div class="em-anl-header">
+                    <div class="em-anl-header-content">
+                        <span class="em-anl-kicker">Analytics</span>
+                        <h2>Understand Your <strong>Events.</strong></h2>
+                        <p>Track event performance, audience growth, and workspace activity from one place.</p>
+                    </div>
+                    <div class="em-anl-header-actions">
+                        <div class="em-anl-date">
+                            <i class="bi bi-calendar3"></i>
+                            <span id="emAnlDate">05 Oct 2026</span>
+                        </div>
+                        <button type="button" class="em-anl-export" id="emAnlExport">
+                            <i class="bi bi-download"></i>
+                            <span>Export</span>
+                        </button>
+                    </div>
+                </div>
+                <!--- Analytics Filter --->
+                <div class="em-anl-filter-bar">
+                    <div class="em-anl-filter-label">
+                        <i class="bi bi-sliders2"></i>
+                        <span>Analytics Period</span>
+                    </div>
+                    <div class="em-anl-periods">
+                        <button type="button" class="active" data-period="7">7 Days</button>
+                        <button type="button" data-period="30">30 Days</button>
+                        <button type="button" data-period="90">90 Days</button>
+                        <button type="button" data-period="365">This Year</button>
+                    </div>
+                </div>
+                <!--- Analytics KPI Cards --->
+                <div class="em-anl-kpis">
+                    <article class="em-anl-kpi">
+                        <div class="em-anl-kpi-top">
+                            <div class="em-anl-kpi-icon purple"><i class="bi bi-calendar2-check"></i></div>
+                            <span class="em-anl-kpi-growth positive"><i class="bi bi-arrow-up"></i>18.4%</span>
+                        </div>
+                        <span class="em-anl-kpi-label">Total Events</span>
+                        <strong id="emAnlEvents">48</strong>
+                        <small>vs previous period</small>
+                    </article>
+                    <article class="em-anl-kpi">
+                        <div class="em-anl-kpi-top">
+                            <div class="em-anl-kpi-icon pink"><i class="bi bi-people"></i></div>
+                            <span class="em-anl-kpi-growth positive"><i class="bi bi-arrow-up"></i>12.7%</span>
+                        </div>
+                        <span class="em-anl-kpi-label">Total Attendees</span>
+                        <strong id="emAnlAttendees">12.8K</strong>
+                        <small>Across all events</small>
+                    </article>
+                    <article class="em-anl-kpi">
+                        <div class="em-anl-kpi-top">
+                            <div class="em-anl-kpi-icon orange"><i class="bi bi-envelope-paper"></i></div>
+                            <span class="em-anl-kpi-growth positive"><i class="bi bi-arrow-up"></i>9.3%</span>
+                        </div>
+                        <span class="em-anl-kpi-label">Enquiries</span>
+                        <strong id="emAnlEnquiries">284</strong>
+                        <small>New event enquiries</small>
+                    </article>
+                    <article class="em-anl-kpi">
+                        <div class="em-anl-kpi-top">
+                            <div class="em-anl-kpi-icon green"><i class="bi bi-graph-up-arrow"></i></div>
+                            <span class="em-anl-kpi-growth positive"><i class="bi bi-arrow-up"></i>21.6%</span>
+                        </div>
+                        <span class="em-anl-kpi-label">Completion Rate</span>
+                        <strong id="emAnlCompletion">86.4%</strong>
+                        <small>Successful events</small>
+                    </article>
+                </div>
+                <!--- Main Analytics Grid --->
+                <div class="em-anl-main-grid">
+                    <!--- Event Performance Chart --->
+                    <div class="em-anl-panel em-anl-performance">
+                        <div class="em-anl-panel-header">
+                            <div>
+                                <span class="em-anl-panel-kicker">Event Performance</span>
+                                <h3>Events & Attendees</h3>
+                            </div>
+                            <div class="em-anl-legend">
+                                <span><i class="event"></i> Events</span>
+                                <span><i class="attendee"></i> Attendees</span>
+                            </div>
+                        </div>
+                        <div class="em-anl-performance-summary">
+                            <div>
+                                <strong>2,486</strong>
+                                <span>Total Activity</span>
+                            </div>
+                            <div class="em-anl-summary-change">
+                                <i class="bi bi-arrow-up-right"></i>
+                                <span>16.8% growth</span>
+                            </div>
+                        </div>
+                        <div class="em-anl-line-chart">
+                            <div class="em-anl-y-axis">
+                                <span>800</span>
+                                <span>600</span>
+                                <span>400</span>
+                                <span>200</span>
+                                <span>0</span>
+                            </div>
+                            <div class="em-anl-chart-body">
+                                <div class="em-anl-chart-grid">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <svg class="em-anl-chart-svg" viewBox="0 0 760 260" preserveAspectRatio="none">
+                                    <path class="em-anl-attendee-fill"
+                                        d="M0,190 C65,175 85,155 135,165 C185,175 205,125 255,135 C305,145 335,105 385,118 C435,130 455,75 505,92 C555,109 580,55 630,68 C680,81 715,40 760,28 L760,260 L0,260 Z">
+                                    </path>
+                                    <path class="em-anl-attendee-line"
+                                        d="M0,190 C65,175 85,155 135,165 C185,175 205,125 255,135 C305,145 335,105 385,118 C435,130 455,75 505,92 C555,109 580,55 630,68 C680,81 715,40 760,28">
+                                    </path>
+                                    <path class="em-anl-event-line"
+                                        d="M0,220 C65,215 85,205 135,212 C185,218 205,190 255,198 C305,205 335,178 385,185 C435,193 455,160 505,170 C555,180 580,145 630,153 C680,160 715,135 760,128">
+                                    </path>
+                                    <circle class="em-anl-chart-point" cx="760" cy="28" r="5"></circle>
+                                </svg>
+                                <div class="em-anl-x-axis">
+                                    <span>Jan</span>
+                                    <span>Feb</span>
+                                    <span>Mar</span>
+                                    <span>Apr</span>
+                                    <span>May</span>
+                                    <span>Jun</span>
+                                    <span>Jul</span>
+                                    <span>Aug</span>
+                                    <span>Sep</span>
+                                    <span>Oct</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--- Event Categories --->
+                    <div class="em-anl-panel em-anl-categories">
+                        <div class="em-anl-panel-header">
+                            <div>
+                                <span class="em-anl-panel-kicker">Distribution</span>
+                                <h3>Event Categories</h3>
+                            </div>
+                        </div>
+                        <div class="em-anl-donut-wrap">
+                            <div class="em-anl-donut">
+                                <div class="em-anl-donut-center">
+                                    <strong>48</strong>
+                                    <span>Events</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="em-anl-category-list">
+                            <div class="em-anl-category-item">
+                                <span class="em-anl-category-dot purple"></span>
+                                <span>Corporate</span>
+                                <strong>34%</strong>
+                            </div>
+                            <div class="em-anl-category-item">
+                                <span class="em-anl-category-dot pink"></span>
+                                <span>Celebrations</span>
+                                <strong>26%</strong>
+                            </div>
+                            <div class="em-anl-category-item">
+                                <span class="em-anl-category-dot orange"></span>
+                                <span>Conferences</span>
+                                <strong>22%</strong>
+                            </div>
+                            <div class="em-anl-category-item">
+                                <span class="em-anl-category-dot green"></span>
+                                <span>Music & Concerts</span>
+                                <strong>18%</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- Secondary Analytics --->
+                <div class="em-anl-secondary-grid">
+                    <!--- Monthly Performance --->
+                    <div class="em-anl-panel em-anl-monthly">
+                        <div class="em-anl-panel-header">
+                            <div>
+                                <span class="em-anl-panel-kicker">Comparison</span>
+                                <h3>Monthly Events</h3>
+                            </div>
+                            <span class="em-anl-year">2026</span>
+                        </div>
+                        <div class="em-anl-bars">
+                            <div class="em-anl-bar-item"><span>Jan</span>
+                                <div><i style="height:42%"></i></div><strong>08</strong>
+                            </div>
+                            <div class="em-anl-bar-item"><span>Feb</span>
+                                <div><i style="height:55%"></i></div><strong>11</strong>
+                            </div>
+                            <div class="em-anl-bar-item"><span>Mar</span>
+                                <div><i style="height:48%"></i></div><strong>09</strong>
+                            </div>
+                            <div class="em-anl-bar-item"><span>Apr</span>
+                                <div><i style="height:68%"></i></div><strong>14</strong>
+                            </div>
+                            <div class="em-anl-bar-item"><span>May</span>
+                                <div><i style="height:58%"></i></div><strong>12</strong>
+                            </div>
+                            <div class="em-anl-bar-item"><span>Jun</span>
+                                <div><i style="height:75%"></i></div><strong>16</strong>
+                            </div>
+                            <div class="em-anl-bar-item"><span>Jul</span>
+                                <div><i style="height:65%"></i></div><strong>13</strong>
+                            </div>
+                            <div class="em-anl-bar-item"><span>Aug</span>
+                                <div><i style="height:82%"></i></div><strong>17</strong>
+                            </div>
+                            <div class="em-anl-bar-item"><span>Sep</span>
+                                <div><i style="height:72%"></i></div><strong>15</strong>
+                            </div>
+                            <div class="em-anl-bar-item active"><span>Oct</span>
+                                <div><i style="height:92%"></i></div><strong>19</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <!--- Client Growth --->
+                    <div class="em-anl-panel em-anl-client-growth">
+                        <div class="em-anl-panel-header">
+                            <div>
+                                <span class="em-anl-panel-kicker">Audience</span>
+                                <h3>Client Growth</h3>
+                            </div>
+                            <span class="em-anl-growth-value">+24.8%</span>
+                        </div>
+                        <div class="em-anl-growth-total">
+                            <strong>326</strong>
+                            <span>Total Clients</span>
+                        </div>
+                        <div class="em-anl-mini-chart">
+                            <span style="height:30%"></span>
+                            <span style="height:40%"></span>
+                            <span style="height:35%"></span>
+                            <span style="height:55%"></span>
+                            <span style="height:48%"></span>
+                            <span style="height:65%"></span>
+                            <span style="height:60%"></span>
+                            <span style="height:78%"></span>
+                            <span style="height:70%"></span>
+                            <span style="height:92%"></span>
+                        </div>
+                        <div class="em-anl-mini-labels">
+                            <span>Jan</span>
+                            <span>Mar</span>
+                            <span>May</span>
+                            <span>Jul</span>
+                            <span>Sep</span>
+                            <span>Oct</span>
+                        </div>
+                    </div>
+                    <!--- Event Status --->
+                    <div class="em-anl-panel em-anl-status">
+                        <div class="em-anl-panel-header">
+                            <div>
+                                <span class="em-anl-panel-kicker">Operations</span>
+                                <h3>Event Status</h3>
+                            </div>
+                        </div>
+                        <div class="em-anl-status-content">
+                            <div class="em-anl-status-ring">
+                                <div>
+                                    <strong>86%</strong>
+                                    <span>Success</span>
+                                </div>
+                            </div>
+                            <div class="em-anl-status-list">
+                                <div><span class="success"></span><label>Completed</label><strong>32</strong></div>
+                                <div><span class="warning"></span><label>Pending</label><strong>07</strong></div>
+                                <div><span class="live"></span><label>Live</label><strong>04</strong></div>
+                                <div><span class="cancelled"></span><label>Cancelled</label><strong>05</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- Top Performing Events --->
+                <div class="em-anl-panel em-anl-top-events">
+                    <div class="em-anl-panel-header">
+                        <div>
+                            <span class="em-anl-panel-kicker">Performance Ranking</span>
+                            <h3>Top Performing Events</h3>
+                        </div>
+                        <a href="404.html" class="em-anl-panel-link">View Events <i
+                                class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="em-anl-table-wrap">
+                        <table class="em-anl-table">
+                            <thead>
+                                <tr>
+                                    <th>Event</th>
+                                    <th>Category</th>
+                                    <th>Attendees</th>
+                                    <th>Completion</th>
+                                    <th>Status</th>
+                                    <th>Performance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="em-anl-event-name">
+                                            <span class="em-anl-rank">01</span>
+                                            <div><strong>Rhythm Under The Stars</strong><small>Chennai</small></div>
+                                        </div>
+                                    </td>
+                                    <td><span class="em-anl-table-category music">Music</span></td>
+                                    <td>2,480</td>
+                                    <td>96%</td>
+                                    <td><span class="em-anl-status-badge completed">Completed</span></td>
+                                    <td>
+                                        <div class="em-anl-performance-bar"><i style="width:94%"></i></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="em-anl-event-name">
+                                            <span class="em-anl-rank">02</span>
+                                            <div><strong>Future Leaders Summit</strong><small>Bengaluru</small></div>
+                                        </div>
+                                    </td>
+                                    <td><span class="em-anl-table-category corporate">Corporate</span></td>
+                                    <td>1,860</td>
+                                    <td>91%</td>
+                                    <td><span class="em-anl-status-badge upcoming">Upcoming</span></td>
+                                    <td>
+                                        <div class="em-anl-performance-bar"><i style="width:88%"></i></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="em-anl-event-name">
+                                            <span class="em-anl-rank">03</span>
+                                            <div><strong>Ideas In Motion</strong><small>Hyderabad</small></div>
+                                        </div>
+                                    </td>
+                                    <td><span class="em-anl-table-category conference">Conference</span></td>
+                                    <td>1,540</td>
+                                    <td>88%</td>
+                                    <td><span class="em-anl-status-badge upcoming">Upcoming</span></td>
+                                    <td>
+                                        <div class="em-anl-performance-bar"><i style="width:82%"></i></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="em-anl-event-name">
+                                            <span class="em-anl-rank">04</span>
+                                            <div><strong>Golden Evening</strong><small>Madurai</small></div>
+                                        </div>
+                                    </td>
+                                    <td><span class="em-anl-table-category celebration">Celebration</span></td>
+                                    <td>1,280</td>
+                                    <td>84%</td>
+                                    <td><span class="em-anl-status-badge completed">Completed</span></td>
+                                    <td>
+                                        <div class="em-anl-performance-bar"><i style="width:76%"></i></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </main>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/admin-analytics.js"></script>
+</body>
+
+</html>

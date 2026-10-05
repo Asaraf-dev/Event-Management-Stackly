@@ -1,0 +1,750 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Event Management</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Main favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- webp favicons -->
+  <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+  <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+  <!-- Apple -->
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+  <!-- Android -->
+  <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+  <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+  <!-- Manifest -->
+  <link rel="manifest" href="assets/images/site.webmanifest" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--- Bootstrap Icon --->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/loader.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!--- Loader Start --->
+  <div class="em-ldr" id="emLdrLoader">
+    <div class="em-ldr-glow em-ldr-glow-one"></div>
+    <div class="em-ldr-glow em-ldr-glow-two"></div>
+    <div class="em-ldr-particles" id="emLdrParticles"></div>
+    <div class="em-ldr-content">
+      <div class="em-ldr-mark">
+        <span class="em-ldr-ring em-ldr-ring-one"></span>
+        <span class="em-ldr-ring em-ldr-ring-two"></span>
+        <span class="em-ldr-icon"><i class="bi bi-stars"></i></span>
+      </div>
+      <div class="em-ldr-brand">EVENT<span>.</span></div>
+      <p class="em-ldr-message" id="emLdrMessage">Creating your experience...</p>
+      <div class="em-ldr-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!--- Loader End --->
+
+  <!--- NavBar --->
+  <div id="em-navbar"></div>
+
+  <!--- Hero Section Start --->
+  <section class="em-ind-hero" id="em-ind-hero">
+    <div class="em-ind-hero-bg">
+      <span class="em-ind-hero-orb em-ind-hero-orb-one"></span>
+      <span class="em-ind-hero-orb em-ind-hero-orb-two"></span>
+      <span class="em-ind-hero-grid"></span>
+    </div>
+    <div class="container">
+      <div class="row align-items-center em-ind-hero-row">
+        <div class="col-lg-6">
+          <div class="em-ind-hero-content">
+            <div class="em-ind-hero-badge">
+              <span class="em-ind-hero-badge-dot"></span>
+              <i class="bi bi-stars"></i>
+              <span>Creating Unforgettable Events</span>
+            </div>
+            <h1 class="em-ind-hero-title">
+              Moments That
+              <span>Deserve</span>
+              To Be Remembered.
+            </h1>
+            <p class="em-ind-hero-text">
+              From intimate celebrations to unforgettable corporate experiences,
+              we plan, design, and manage events that turn every moment into a memory.
+            </p>
+            <div class="em-ind-hero-actions">
+              <a href="404.html" class="em-ind-hero-primary-btn">
+                <span>Explore Events</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <a href="404.html" class="em-ind-hero-secondary-btn">
+                <span>Plan Your Event</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+            <div class="em-ind-hero-stats">
+              <div class="em-ind-hero-stat">
+                <strong><span class="em-ind-hero-counter" data-target="500">0</span>+</strong>
+                <span>Events Created</span>
+              </div>
+              <div class="em-ind-hero-stat">
+                <strong><span class="em-ind-hero-counter" data-target="50">0</span>K+</strong>
+                <span>Happy Guests</span>
+              </div>
+              <div class="em-ind-hero-stat">
+                <strong><span class="em-ind-hero-counter" data-target="100">0</span>+</strong>
+                <span>Trusted Partners</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="em-ind-hero-visual">
+            <div class="em-ind-hero-main-image">
+              <img src="assets/images/hero-main.webp" alt="Live event celebration">
+              <div class="em-ind-hero-image-overlay"></div>
+            </div>
+            <div class="em-ind-hero-floating em-ind-hero-event-card">
+              <div class="em-ind-hero-event-image">
+                <img src="assets/images/event-card.webp" alt="Upcoming event">
+              </div>
+              <div class="em-ind-hero-event-info">
+                <span>UPCOMING EVENT</span>
+                <strong>Music Festival</strong>
+                <small><i class="bi bi-calendar3"></i> 24 Dec 2026</small>
+              </div>
+              <div class="em-ind-hero-event-arrow">
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+            </div>
+            <div class="em-ind-hero-floating em-ind-hero-location-card">
+              <div class="em-ind-hero-location-icon">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <span>Next Event</span>
+                <strong>Chennai, India</strong>
+              </div>
+            </div>
+            <div class="em-ind-hero-floating em-ind-hero-attendee-card">
+              <div class="em-ind-hero-attendee-images">
+                <img src="assets/images/client-1.webp" alt="Event attendee">
+                <img src="assets/images/client-2.webp" alt="Event attendee">
+                <img src="assets/images/client-3.webp" alt="Event attendee">
+                <span>+2K</span>
+              </div>
+              <div class="em-ind-hero-attendee-text">
+                <strong>2,000+</strong>
+                <span>Guests Joined</span>
+              </div>
+            </div>
+            <div class="em-ind-hero-play">
+              <a href="404.html"><button type="button" aria-label="Play event story">
+                  <i class="bi bi-play-fill"></i>
+                </button></a>
+              <span>Our Story</span>
+            </div>
+            <div class="em-ind-hero-decoration em-ind-hero-decoration-one">
+              <i class="bi bi-stars"></i>
+            </div>
+            <div class="em-ind-hero-decoration em-ind-hero-decoration-two">
+              <i class="bi bi-heart-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- Hero Bottom Strip --->
+    <div class="em-ind-hero-bottom">
+      <div class="container">
+        <div class="em-ind-hero-bottom-content">
+          <div class="em-ind-hero-bottom-item">
+            <span class="em-ind-hero-bottom-icon"><i class="bi bi-calendar-event"></i></span>
+            <div>
+              <strong>Every Event</strong>
+              <span>Uniquely Designed</span>
+            </div>
+          </div>
+          <div class="em-ind-hero-bottom-item">
+            <span class="em-ind-hero-bottom-icon"><i class="bi bi-people"></i></span>
+            <div>
+              <strong>Expert Team</strong>
+              <span>Professional Planning</span>
+            </div>
+          </div>
+          <div class="em-ind-hero-bottom-item">
+            <span class="em-ind-hero-bottom-icon"><i class="bi bi-stars"></i></span>
+            <div>
+              <strong>Memorable Moments</strong>
+              <span>Made To Last</span>
+            </div>
+          </div>
+          <div class="em-ind-hero-scroll">
+            <span>Scroll To Explore</span>
+            <i class="bi bi-arrow-down"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- Hero Section End --->
+
+  <!--- Event Categories Section Start --->
+  <section class="em-ind-categories em-section" id="em-ind-categories">
+    <div class="container">
+      <!--- Section Heading --->
+      <div class="em-ind-categories-head">
+        <div class="em-ind-categories-heading">
+          <span class="em-ind-categories-label">
+            <i class="bi bi-stars"></i>
+            Explore Our Events
+          </span>
+          <h2 class="em-ind-categories-title">
+            Every Occasion.
+            <span>One Unforgettable Experience.</span>
+          </h2>
+        </div>
+        <div class="em-ind-categories-intro">
+          <p>From intimate celebrations to large-scale experiences, we create events designed around your story, style,
+            and vision.</p>
+          <a href="404.html" class="em-ind-categories-link">
+            <span>View All Events</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+      <!--- Category Showcase --->
+      <div class="em-ind-categories-showcase">
+        <!--- Category Navigation --->
+        <div class="em-ind-categories-nav">
+          <button type="button" class="em-ind-category-item active" data-category="wedding">
+            <span class="em-ind-category-number">01</span>
+            <span class="em-ind-category-name">Weddings & Celebrations</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+          <button type="button" class="em-ind-category-item" data-category="corporate">
+            <span class="em-ind-category-number">02</span>
+            <span class="em-ind-category-name">Corporate Events</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+          <button type="button" class="em-ind-category-item" data-category="concert">
+            <span class="em-ind-category-number">03</span>
+            <span class="em-ind-category-name">Music & Concerts</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+          <button type="button" class="em-ind-category-item" data-category="conference">
+            <span class="em-ind-category-number">04</span>
+            <span class="em-ind-category-name">Conferences</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+          <button type="button" class="em-ind-category-item" data-category="workshop">
+            <span class="em-ind-category-number">05</span>
+            <span class="em-ind-category-name">Workshops</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+          <button type="button" class="em-ind-category-item" data-category="private">
+            <span class="em-ind-category-number">06</span>
+            <span class="em-ind-category-name">Private Parties</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+        </div>
+        <!--- Category Preview --->
+        <div class="em-ind-categories-preview">
+          <div class="em-ind-category-image">
+            <img id="em-ind-category-image" src="assets/images/category-wedding.webp" alt="Wedding event">
+            <div class="em-ind-category-image-overlay"></div>
+          </div>
+          <div class="em-ind-category-content">
+            <span class="em-ind-category-tag" id="em-ind-category-tag">01 / CELEBRATIONS</span>
+            <h3 id="em-ind-category-title">Weddings & Celebrations</h3>
+            <p id="em-ind-category-description">Beautifully planned celebrations where every detail comes together to
+              create a day worth remembering forever.</p>
+            <a href="404.html" class="em-ind-category-btn">
+              <span>Explore Category</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+          <div class="em-ind-category-counter">
+            <span id="em-ind-category-current">01</span>
+            <span>/</span>
+            <span>06</span>
+          </div>
+        </div>
+      </div>
+      <!--- Category Bottom --->
+      <div class="em-ind-categories-bottom">
+        <span class="em-ind-categories-bottom-line"></span>
+        <span>Curated experiences. Thoughtful details. Lasting memories.</span>
+        <span class="em-ind-categories-bottom-line"></span>
+      </div>
+    </div>
+  </section>
+  <!--- Event Categories Section End --->
+
+  <!--- What We Create Section Start --->
+  <section class="em-ind-create em-section" id="em-ind-create">
+    <div class="container">
+      <!--- Section Heading --->
+      <div class="em-ind-create-head">
+        <div class="em-ind-create-heading">
+          <span class="em-ind-create-label">
+            <i class="bi bi-magic"></i>
+            What We Create
+          </span>
+          <h2 class="em-ind-create-title">
+            More Than Events.
+            <span>We Create Experiences.</span>
+          </h2>
+        </div>
+        <div class="em-ind-create-intro">
+          <p>From the first idea to the final moment, we bring creativity, planning, and precision together to create
+            experiences that stay with people.</p>
+        </div>
+      </div>
+      <!--- Creative Services Showcase --->
+      <div class="em-ind-create-showcase">
+        <!--- Featured Service --->
+        <div class="em-ind-create-featured">
+          <div class="em-ind-create-featured-image">
+            <img src="assets/images/create-featured.webp" alt="Event planning and management">
+            <div class="em-ind-create-featured-overlay"></div>
+          </div>
+          <div class="em-ind-create-featured-content">
+            <span>01 / OUR EXPERTISE</span>
+            <h3>Turning Your Vision Into A <strong>Real Experience.</strong></h3>
+            <p>We handle every detail behind the scenes so you can focus on the moments that matter.</p>
+            <a href="404.html" class="em-ind-create-featured-btn">
+              <span>Start Your Event</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+          <div class="em-ind-create-featured-number">500+</div>
+          <span class="em-ind-create-featured-caption">Events Created</span>
+        </div>
+        <!--- Service List --->
+        <div class="em-ind-create-services">
+          <!--- Service Item --->
+          <button type="button" class="em-ind-create-service active" data-create="planning">
+            <span class="em-ind-create-service-number">01</span>
+            <span class="em-ind-create-service-icon">
+              <i class="bi bi-calendar2-check"></i>
+            </span>
+            <span class="em-ind-create-service-content">
+              <strong>Event Planning</strong>
+              <small>Concept, planning & seamless execution</small>
+            </span>
+            <span class="em-ind-create-service-arrow">
+              <i class="bi bi-arrow-up-right"></i>
+            </span>
+          </button>
+          <!--- Service Item --->
+          <button type="button" class="em-ind-create-service" data-create="styling">
+            <span class="em-ind-create-service-number">02</span>
+            <span class="em-ind-create-service-icon">
+              <i class="bi bi-palette"></i>
+            </span>
+            <span class="em-ind-create-service-content">
+              <strong>Venue & Styling</strong>
+              <small>Spaces designed around your story</small>
+            </span>
+            <span class="em-ind-create-service-arrow">
+              <i class="bi bi-arrow-up-right"></i>
+            </span>
+          </button>
+          <!--- Service Item --->
+          <button type="button" class="em-ind-create-service" data-create="entertainment">
+            <span class="em-ind-create-service-number">03</span>
+            <span class="em-ind-create-service-icon">
+              <i class="bi bi-music-note-beamed"></i>
+            </span>
+            <span class="em-ind-create-service-content">
+              <strong>Entertainment</strong>
+              <small>Performances that bring energy</small>
+            </span>
+            <span class="em-ind-create-service-arrow">
+              <i class="bi bi-arrow-up-right"></i>
+            </span>
+          </button>
+          <!--- Service Item --->
+          <button type="button" class="em-ind-create-service" data-create="hospitality">
+            <span class="em-ind-create-service-number">04</span>
+            <span class="em-ind-create-service-icon">
+              <i class="bi bi-people"></i>
+            </span>
+            <span class="em-ind-create-service-content">
+              <strong>Guest Experience</strong>
+              <small>Thoughtful details from arrival to farewell</small>
+            </span>
+            <span class="em-ind-create-service-arrow">
+              <i class="bi bi-arrow-up-right"></i>
+            </span>
+          </button>
+          <!--- Service Item --->
+          <button type="button" class="em-ind-create-service" data-create="production">
+            <span class="em-ind-create-service-number">05</span>
+            <span class="em-ind-create-service-icon">
+              <i class="bi bi-camera-reels"></i>
+            </span>
+            <span class="em-ind-create-service-content">
+              <strong>Event Production</strong>
+              <small>Technology, production & coordination</small>
+            </span>
+            <span class="em-ind-create-service-arrow">
+              <i class="bi bi-arrow-up-right"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+      <!--- Service Bottom Strip --->
+      <div class="em-ind-create-bottom">
+        <div class="em-ind-create-bottom-item">
+          <i class="bi bi-lightbulb"></i>
+          <span>Creative Concepts</span>
+        </div>
+        <div class="em-ind-create-bottom-line"></div>
+        <div class="em-ind-create-bottom-item">
+          <i class="bi bi-diagram-3"></i>
+          <span>Complete Coordination</span>
+        </div>
+        <div class="em-ind-create-bottom-line"></div>
+        <div class="em-ind-create-bottom-item">
+          <i class="bi bi-stars"></i>
+          <span>Memorable Experiences</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- What We Create Section End --->
+
+  <!--- Why Choose Us Section Start --->
+  <section class="em-ind-why">
+    <div class="container">
+      <div class="em-ind-why-head">
+        <div class="em-ind-why-heading">
+          <span class="em-ind-why-eyebrow"><i class="bi bi-stars"></i> Why Choose Us</span>
+          <h2 class="em-ind-why-title">Because Great Events <span>Don't Happen By Chance.</span></h2>
+        </div>
+        <div class="em-ind-why-intro">
+          <span class="em-ind-why-intro-line"></span>
+          <p>Behind every unforgettable event is a team that plans with purpose, creates with passion, and delivers
+            every detail with precision.</p>
+        </div>
+      </div>
+      <div class="em-ind-why-grid">
+        <article class="em-ind-why-card em-ind-why-experience" data-why-card="experience">
+          <div class="em-ind-why-card-head">
+            <span>01</span>
+            <i class="bi bi-award"></i>
+          </div>
+          <div class="em-ind-why-card-body">
+            <small>Experience</small>
+            <h3>Experience<br>That Shows.</h3>
+            <p>Years of experience help us turn complex event requirements into seamless experiences.</p>
+          </div>
+          <div class="em-ind-why-card-footer">
+            <span>01 — 05</span>
+
+          </div>
+        </article>
+        <article class="em-ind-why-card em-ind-why-events" data-why-card="events">
+          <div class="em-ind-why-events-number">500<span>+</span></div>
+          <span class="em-ind-why-events-label">Events Delivered</span>
+          <i class="bi bi-calendar2-check em-ind-why-events-icon"></i>
+          <div class="em-ind-why-events-glow"></div>
+        </article>
+        <article class="em-ind-why-card em-ind-why-creative" data-why-card="creative">
+          <div class="em-ind-why-card-head">
+            <span>02</span>
+            <i class="bi bi-lightbulb"></i>
+          </div>
+          <div class="em-ind-why-card-body">
+            <small>Creativity</small>
+            <h3>Ideas Without<br>Limits.</h3>
+          </div>
+          <a href="404.html">
+            <div class="em-ind-why-card-footer">
+              <span>Explore</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </div>
+          </a>
+        </article>
+        <article class="em-ind-why-card em-ind-why-detail" data-why-card="detail">
+          <div class="em-ind-why-card-head">
+            <span>03</span>
+            <i class="bi bi-grid-3x3-gap"></i>
+          </div>
+          <div class="em-ind-why-card-body">
+            <small>Precision</small>
+            <h3>Every Detail<br>Matters.</h3>
+          </div>
+        </article>
+        <article class="em-ind-why-card em-ind-why-team" data-why-card="team">
+          <div class="em-ind-why-team-image">
+            <!--<img src="assets/images/why-team.webp">-->
+          </div>
+          <div class="em-ind-why-team-overlay"></div>
+          <div class="em-ind-why-team-content">
+            <div class="em-ind-why-card-head">
+              <span>04</span>
+              <i class="bi bi-people"></i>
+            </div>
+            <div class="em-ind-why-team-text">
+              <small>Our Team</small>
+              <h3>A Team You<br>Can Trust.</h3>
+            </div>
+          </div>
+        </article>
+        <article class="em-ind-why-card em-ind-why-guest" data-why-card="guest">
+          <div class="em-ind-why-card-head">
+            <span>05</span>
+            <i class="bi bi-heart"></i>
+          </div>
+          <div class="em-ind-why-card-body">
+            <small>Guest Experience</small>
+            <h3>People Come<br>First.</h3>
+            <p>Thoughtful moments designed to make every guest feel welcomed, comfortable, and connected.</p>
+          </div>
+          <div class="em-ind-why-guest-line"></div>
+        </article>
+      </div>
+      <div class="em-ind-why-bottom">
+        <div class="em-ind-why-bottom-left">
+          <span>Our Philosophy</span>
+          <div></div>
+          <p>We don't just manage events. We create experiences people remember.</p>
+        </div>
+        <a href="404.html" class="em-ind-why-btn">Discover Our Story <i class="bi bi-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </section>
+  <!--- Why Choose Us Section End --->
+
+  <!--- Upcoming / Live Events Section Start --->
+  <section class="em-ind-events">
+    <div class="container">
+      <div class="em-ind-events-head">
+        <div class="em-ind-events-heading">
+          <span class="em-ind-events-eyebrow"><i class="bi bi-calendar-event"></i> What's Coming</span>
+          <h2 class="em-ind-events-title">Moments Worth <span>Looking Forward To.</span></h2>
+        </div>
+        <div class="em-ind-events-head-right">
+          <p>Discover the events we're bringing to life next. From intimate gatherings to unforgettable celebrations.
+          </p>
+          <a href="404.html" class="em-ind-events-view-all">View All Events <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+      <div class="em-ind-events-showcase">
+        <div class="em-ind-events-featured">
+          <div class="em-ind-events-featured-image">
+            <img src="assets/images/category-concert.webp" alt="Featured Event" id="emIndEventImage">
+            <div class="em-ind-events-image-overlay"></div>
+            <div class="em-ind-events-live">
+              <span></span>
+              Live Event
+            </div>
+            <div class="em-ind-events-featured-number">01</div>
+            <a href="404.html"><button type="button" class="em-ind-events-play" aria-label="View Event">
+                <i class="bi bi-arrow-up-right"></i>
+              </button></a>
+          </div>
+          <div class="em-ind-events-featured-content">
+            <div class="em-ind-events-featured-meta">
+              <span id="emIndEventCategory">Music & Concerts</span>
+              <span>•</span>
+              <span id="emIndEventLocation">Chennai, Tamil Nadu</span>
+            </div>
+            <h3 id="emIndEventTitle">Rhythm Under The Stars</h3>
+            <p id="emIndEventDescription">An immersive evening of live music, lights, energy, and unforgettable moments
+              under an open sky.</p>
+            <div class="em-ind-events-featured-bottom">
+              <div class="em-ind-events-date">
+                <strong id="emIndEventDay">18</strong>
+                <span><small id="emIndEventMonth">OCT</small><small id="emIndEventYear">2026</small></span>
+              </div>
+              <a href="404.html" class="em-ind-events-details">Explore Event <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="em-ind-events-list">
+          <div class="em-ind-events-list-head">
+            <span>Upcoming Events</span>
+            <span id="emIndEventCount">04 Events</span>
+          </div>
+          <button type="button" class="em-ind-event-item active" data-event="music">
+            <span class="em-ind-event-date">
+              <strong>18</strong>
+              <small>OCT</small>
+            </span>
+            <span class="em-ind-event-info">
+              <small>Music & Concerts</small>
+              <strong>Rhythm Under The Stars</strong>
+              <span><i class="bi bi-geo-alt"></i> Chennai, Tamil Nadu</span>
+            </span>
+            <span class="em-ind-event-arrow"><i class="bi bi-arrow-up-right"></i></span>
+          </button>
+          <button type="button" class="em-ind-event-item" data-event="corporate">
+            <span class="em-ind-event-date">
+              <strong>25</strong>
+              <small>OCT</small>
+            </span>
+            <span class="em-ind-event-info">
+              <small>Corporate</small>
+              <strong>Future Leaders Summit</strong>
+              <span><i class="bi bi-geo-alt"></i> Bengaluru, Karnataka</span>
+            </span>
+            <span class="em-ind-event-arrow"><i class="bi bi-arrow-up-right"></i></span>
+          </button>
+          <button type="button" class="em-ind-event-item" data-event="conference">
+            <span class="em-ind-event-date">
+              <strong>07</strong>
+              <small>NOV</small>
+            </span>
+            <span class="em-ind-event-info">
+              <small>Conference</small>
+              <strong>Ideas In Motion</strong>
+              <span><i class="bi bi-geo-alt"></i> Hyderabad, Telangana</span>
+            </span>
+            <span class="em-ind-event-arrow"><i class="bi bi-arrow-up-right"></i></span>
+          </button>
+          <button type="button" class="em-ind-event-item" data-event="celebration">
+            <span class="em-ind-event-date">
+              <strong>21</strong>
+              <small>NOV</small>
+            </span>
+            <span class="em-ind-event-info">
+              <small>Celebration</small>
+              <strong>The Grand Celebration</strong>
+              <span><i class="bi bi-geo-alt"></i> Coimbatore, Tamil Nadu</span>
+            </span>
+            <span class="em-ind-event-arrow"><i class="bi bi-arrow-up-right"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- Upcoming / Live Events Section End --->
+
+  <!--- Testimonials Section Start --->
+  <section class="em-ind-testimonials">
+    <div class="container">
+      <div class="em-ind-testimonials-top">
+        <div class="em-ind-testimonials-heading">
+          <span class="em-ind-testimonials-eyebrow"><i class="bi bi-chat-quote"></i> Client Stories</span>
+          <h2 class="em-ind-testimonials-title">The Moments We Create <span>Speak For Themselves.</span></h2>
+        </div>
+        <div class="em-ind-testimonials-count">
+          <strong id="emIndTestCurrent">01</strong>
+          <span></span>
+          <small>04</small>
+        </div>
+      </div>
+      <div class="em-ind-testimonials-main">
+        <div class="em-ind-testimonials-quote-mark">
+          <i class="bi bi-quote"></i>
+        </div>
+        <div class="em-ind-testimonials-content">
+          <div class="em-ind-testimonials-rating" id="emIndTestRating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <div class="em-ind-testimonials-quote-wrap">
+            <p class="em-ind-testimonials-quote" id="emIndTestQuote">"They didn't just organize our event. They
+              understood our vision, elevated it, and delivered an experience that our guests are still talking about."
+            </p>
+          </div>
+          <div class="em-ind-testimonials-client">
+            <div class="em-ind-testimonials-client-image">
+              <img src="assets/images/client-1.webp" alt="Client">
+            </div>
+            <div class="em-ind-testimonials-client-info">
+              <strong id="emIndTestName">Arun Kumar</strong>
+              <span id="emIndTestRole">Corporate Event Client</span>
+            </div>
+            <div class="em-ind-testimonials-event">
+              <span>Event</span>
+              <strong id="emIndTestEvent">Future Leaders Summit</strong>
+            </div>
+          </div>
+        </div>
+        <div class="em-ind-testimonials-navigation">
+          <button type="button" class="em-ind-testimonials-nav active" data-testimonial="0">
+            <span>01</span>
+            <i></i>
+          </button>
+          <button type="button" class="em-ind-testimonials-nav" data-testimonial="1">
+            <span>02</span>
+            <i></i>
+          </button>
+          <button type="button" class="em-ind-testimonials-nav" data-testimonial="2">
+            <span>03</span>
+            <i></i>
+          </button>
+          <button type="button" class="em-ind-testimonials-nav" data-testimonial="3">
+            <span>04</span>
+            <i></i>
+          </button>
+        </div>
+      </div>
+      <div class="em-ind-testimonials-footer">
+        <div class="em-ind-testimonials-footer-text">
+          <span>Trusted Experiences</span>
+          <p>Real experiences from people who trusted us with their most important moments.</p>
+        </div>
+        <div class="em-ind-testimonials-arrows">
+          <button type="button" class="em-ind-testimonials-arrow" id="emIndTestPrev" aria-label="Previous testimonial">
+            <i class="bi bi-arrow-left"></i>
+          </button>
+          <button type="button" class="em-ind-testimonials-arrow" id="emIndTestNext" aria-label="Next testimonial">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- Testimonials Section End --->
+
+
+  <!--- Footer --->
+  <div id="em-footer"></div>
+
+  <!--- Js Files --->
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+
+  <!-- Page JS -->
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>

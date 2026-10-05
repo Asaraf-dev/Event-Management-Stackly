@@ -1,0 +1,731 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event | Event Management</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Main favicon -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- webp favicons -->
+    <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+    <!-- Android -->
+    <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--- Bootstrap Icon --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!--- Loader Start --->
+    <div class="em-ldr" id="emLdrLoader">
+        <div class="em-ldr-glow em-ldr-glow-one"></div>
+        <div class="em-ldr-glow em-ldr-glow-two"></div>
+        <div class="em-ldr-particles" id="emLdrParticles"></div>
+        <div class="em-ldr-content">
+            <div class="em-ldr-mark">
+                <span class="em-ldr-ring em-ldr-ring-one"></span>
+                <span class="em-ldr-ring em-ldr-ring-two"></span>
+                <span class="em-ldr-icon"><i class="bi bi-stars"></i></span>
+            </div>
+            <div class="em-ldr-brand">EVENT<span>.</span></div>
+            <p class="em-ldr-message" id="emLdrMessage">Creating your experience...</p>
+            <div class="em-ldr-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!--- Loader End --->
+
+    <!--- NavBar --->
+    <div id="em-navbar"></div>
+
+    <!--- Hero Section Start --->
+    <section class="em-sub-hero" data-hero-page="events">
+        <div class="em-sub-hero-grid"></div>
+        <div class="em-sub-hero-glow em-sub-hero-glow-one"></div>
+        <div class="em-sub-hero-glow em-sub-hero-glow-two"></div>
+        <div class="em-sub-hero-orbit em-sub-hero-orbit-one"></div>
+        <div class="em-sub-hero-orbit em-sub-hero-orbit-two"></div>
+        <div class="em-sub-hero-particles" id="emSubHeroParticles"></div>
+        <div class="container em-sub-hero-container">
+            <div class="em-sub-hero-top">
+                <div class="em-sub-hero-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span>Event</span>
+                </div>
+                <span class="em-sub-hero-page-number">03 / 05</span>
+            </div>
+            <div class="em-sub-hero-main">
+                <div class="em-sub-hero-content">
+                    <div class="em-sub-hero-eyebrow">
+                        <span class="em-sub-hero-eyebrow-line"></span>
+                        <span>What We Create</span>
+                    </div>
+                    <h1 class="em-sub-hero-title">Events <span>Designed</span> To Be Remembered.</h1>
+
+                    <div class="em-sub-hero-actions">
+                        <a href="#em-sub-hero-next" class="em-sub-hero-scroll-btn">
+                            <span>Explore Page</span>
+                            <i class="bi bi-arrow-down"></i>
+                        </a>
+                        <span class="em-sub-hero-status"><i class="bi bi-stars"></i> Creating unforgettable
+                            experiences</span>
+                    </div>
+                </div>
+                <div class="em-sub-hero-visual">
+                    <div class="em-sub-hero-image-wrap">
+                        <div class="em-sub-hero-image-frame">
+                            <img src="assets/images/category-corporate.webp" alt="Events" class="em-sub-hero-image">
+                        </div>
+                        <div class="em-sub-hero-image-label">
+                            <span>EST.</span>
+                            <strong>2026</strong>
+                        </div>
+                        <div class="em-sub-hero-floating-card em-sub-hero-card-one">
+                            <span class="em-sub-hero-card-icon"><i class="bi bi-stars"></i></span>
+                            <span><strong>500+</strong><small>Events Created</small></span>
+                        </div>
+                        <div class="em-sub-hero-floating-card em-sub-hero-card-two">
+                            <span class="em-sub-hero-live-dot"></span>
+                            <span>Making moments happen</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="em-sub-hero-bottom">
+                <div class="em-sub-hero-bottom-line"></div>
+                <span>Scroll to discover</span>
+                <div class="em-sub-hero-bottom-icon">
+                    <i class="bi bi-arrow-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="em-sub-hero-next"></div>
+    <!--- Hero Section End --->
+
+    <!--- Event Discovery / Category Filter Section Start --->
+    <section class="em-evt-discovery" id="em-evt-discovery">
+        <div class="em-evt-discovery-glow em-evt-discovery-glow-one"></div>
+        <div class="em-evt-discovery-glow em-evt-discovery-glow-two"></div>
+        <div class="container">
+            <div class="em-evt-discovery-header">
+                <div class="em-evt-discovery-label">
+                    <span class="em-evt-discovery-label-line"></span>
+                    <span>Explore Our Events</span>
+                </div>
+                <div class="em-evt-discovery-heading">
+                    <h2>Find An Experience <span>Worth Remembering.</span></h2>
+                    <p>Explore our collection of events, from high-energy concerts and corporate experiences to intimate
+                        celebrations and inspiring conferences.</p>
+                </div>
+            </div>
+            <div class="em-evt-discovery-toolbar">
+                <div class="em-evt-discovery-filters">
+                    <button type="button" class="em-evt-discovery-filter active" data-filter="all">All Events</button>
+                    <button type="button" class="em-evt-discovery-filter" data-filter="corporate">Corporate</button>
+                    <button type="button" class="em-evt-discovery-filter" data-filter="conference">Conferences</button>
+                    <button type="button" class="em-evt-discovery-filter" data-filter="music">Music & Concerts</button>
+                    <button type="button" class="em-evt-discovery-filter"
+                        data-filter="celebration">Celebrations</button>
+                    <button type="button" class="em-evt-discovery-filter" data-filter="workshop">Workshops</button>
+                    <button type="button" class="em-evt-discovery-filter" data-filter="private">Private Events</button>
+                </div>
+                <div class="em-evt-discovery-search">
+                    <i class="bi bi-search"></i>
+                    <input type="search" id="emEvtDiscoverySearch" placeholder="Search events..."
+                        aria-label="Search events">
+                </div>
+            </div>
+            <div class="em-evt-discovery-meta">
+                <span><strong id="emEvtDiscoveryCount">12</strong> Events Found</span>
+                <span class="em-evt-discovery-meta-line"></span>
+                <span>Curated Experiences</span>
+            </div>
+            <div class="em-evt-discovery-grid" id="emEvtDiscoveryGrid">
+                <article class="em-evt-discovery-card" data-category="music" data-title="Rhythm Under The Stars">
+                    <div class="em-evt-discovery-image">
+                        <img src="assets/images/event-rhythm.webp" alt="Rhythm Under The Stars">
+                        <span class="em-evt-discovery-number">01</span>
+                        <span class="em-evt-discovery-category">Music & Concerts</span>
+                        <a href="404.html" class="em-evt-discovery-image-btn"
+                            aria-label="Explore Rhythm Under The Stars"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="em-evt-discovery-content">
+                        <div class="em-evt-discovery-date"><strong>18</strong><span>OCT<br>2026</span></div>
+                        <div class="em-evt-discovery-info">
+                            <span class="em-evt-discovery-location"><i class="bi bi-geo-alt"></i> Chennai, Tamil
+                                Nadu</span>
+                            <h3>Rhythm Under The Stars</h3>
+                            <p>An immersive night of live music, lights, energy, and unforgettable performances.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="em-evt-discovery-card" data-category="corporate" data-title="Future Leaders Summit">
+                    <div class="em-evt-discovery-image">
+                        <img src="assets/images/category-conference.webp" alt="Future Leaders Summit">
+                        <span class="em-evt-discovery-number">02</span>
+                        <span class="em-evt-discovery-category">Corporate</span>
+                        <a href="404.html" class="em-evt-discovery-image-btn"
+                            aria-label="Explore Future Leaders Summit"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="em-evt-discovery-content">
+                        <div class="em-evt-discovery-date"><strong>25</strong><span>OCT<br>2026</span></div>
+                        <div class="em-evt-discovery-info">
+                            <span class="em-evt-discovery-location"><i class="bi bi-geo-alt"></i> Bengaluru,
+                                Karnataka</span>
+                            <h3>Future Leaders Summit</h3>
+                            <p>A powerful corporate gathering connecting ambitious leaders, ideas, and opportunities.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="em-evt-discovery-card" data-category="conference" data-title="Ideas In Motion">
+                    <div class="em-evt-discovery-image">
+                        <img src="assets/images/category-corporate.webp" alt="Ideas In Motion">
+                        <span class="em-evt-discovery-number">03</span>
+                        <span class="em-evt-discovery-category">Conferences</span>
+                        <a href="404.html" class="em-evt-discovery-image-btn" aria-label="Explore Ideas In Motion"><i
+                                class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="em-evt-discovery-content">
+                        <div class="em-evt-discovery-date"><strong>07</strong><span>NOV<br>2026</span></div>
+                        <div class="em-evt-discovery-info">
+                            <span class="em-evt-discovery-location"><i class="bi bi-geo-alt"></i> Hyderabad,
+                                Telangana</span>
+                            <h3>Ideas In Motion</h3>
+                            <p>A forward-thinking conference bringing together ideas, innovation, and industry voices.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="em-evt-discovery-card" data-category="celebration" data-title="The Grand Celebration">
+                    <div class="em-evt-discovery-image">
+                        <img src="assets/images/category-wedding.webp" alt="The Grand Celebration">
+                        <span class="em-evt-discovery-number">04</span>
+                        <span class="em-evt-discovery-category">Celebrations</span>
+                        <a href="404.html" class="em-evt-discovery-image-btn"
+                            aria-label="Explore The Grand Celebration"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="em-evt-discovery-content">
+                        <div class="em-evt-discovery-date"><strong>21</strong><span>NOV<br>2026</span></div>
+                        <div class="em-evt-discovery-info">
+                            <span class="em-evt-discovery-location"><i class="bi bi-geo-alt"></i> Coimbatore, Tamil
+                                Nadu</span>
+                            <h3>The Grand Celebration</h3>
+                            <p>A beautifully curated celebration filled with atmosphere, emotion, and unforgettable
+                                details.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="em-evt-discovery-card" data-category="workshop" data-title="Creative Minds Workshop">
+                    <div class="em-evt-discovery-image">
+                        <img src="assets/images/category-workshop.webp" alt="Creative Minds Workshop">
+                        <span class="em-evt-discovery-number">05</span>
+                        <span class="em-evt-discovery-category">Workshops</span>
+                        <a href="404.html" class="em-evt-discovery-image-btn"
+                            aria-label="Explore Creative Minds Workshop"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="em-evt-discovery-content">
+                        <div class="em-evt-discovery-date"><strong>28</strong><span>NOV<br>2026</span></div>
+                        <div class="em-evt-discovery-info">
+                            <span class="em-evt-discovery-location"><i class="bi bi-geo-alt"></i> Chennai, Tamil
+                                Nadu</span>
+                            <h3>Creative Minds Workshop</h3>
+                            <p>An interactive learning experience designed to spark creativity, collaboration, and fresh
+                                thinking.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="em-evt-discovery-card" data-category="private" data-title="The Private Soirée">
+                    <div class="em-evt-discovery-image">
+                        <img src="assets/images/category-private.webp" alt="The Private Soirée">
+                        <span class="em-evt-discovery-number">06</span>
+                        <span class="em-evt-discovery-category">Private Events</span>
+                        <a href="404.html" class="em-evt-discovery-image-btn" aria-label="Explore The Private Soirée"><i
+                                class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="em-evt-discovery-content">
+                        <div class="em-evt-discovery-date"><strong>05</strong><span>DEC<br>2026</span></div>
+                        <div class="em-evt-discovery-info">
+                            <span class="em-evt-discovery-location"><i class="bi bi-geo-alt"></i> Chennai, Tamil
+                                Nadu</span>
+                            <h3>The Private Soirée</h3>
+                            <p>An intimate private gathering designed around refined details, atmosphere, and personal
+                                moments.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="em-evt-discovery-card" data-category="corporate" data-title="Business Beyond Borders">
+                    <div class="em-evt-discovery-image">
+                        <img src="assets/images/create-entertainment.webp" alt="Business Beyond Borders">
+                        <span class="em-evt-discovery-number">07</span>
+                        <span class="em-evt-discovery-category">Corporate</span>
+                        <a href="404.html" class="em-evt-discovery-image-btn"
+                            aria-label="Explore Business Beyond Borders"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="em-evt-discovery-content">
+                        <div class="em-evt-discovery-date"><strong>12</strong><span>DEC<br>2026</span></div>
+                        <div class="em-evt-discovery-info">
+                            <span class="em-evt-discovery-location"><i class="bi bi-geo-alt"></i> Kochi, Kerala</span>
+                            <h3>Business Beyond Borders</h3>
+                            <p>A high-impact corporate experience focused on connections, collaboration, and growth.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="em-evt-discovery-card" data-category="music" data-title="Echoes Live">
+                    <div class="em-evt-discovery-image">
+                        <img src="assets/images/hero-main.webp" alt="Echoes Live">
+                        <span class="em-evt-discovery-number">08</span>
+                        <span class="em-evt-discovery-category">Music & Concerts</span>
+                        <a href="404.html" class="em-evt-discovery-image-btn" aria-label="Explore Echoes Live"><i
+                                class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="em-evt-discovery-content">
+                        <div class="em-evt-discovery-date"><strong>19</strong><span>DEC<br>2026</span></div>
+                        <div class="em-evt-discovery-info">
+                            <span class="em-evt-discovery-location"><i class="bi bi-geo-alt"></i> Bengaluru,
+                                Karnataka</span>
+                            <h3>Echoes Live</h3>
+                            <p>A high-energy live music experience where sound, visuals, and atmosphere come together.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="em-evt-discovery-card" data-category="conference" data-title="The Innovation Forum">
+                    <div class="em-evt-discovery-image">
+                        <img src="assets/images/sub-hero-contact.webp" alt="The Innovation Forum">
+                        <span class="em-evt-discovery-number">09</span>
+                        <span class="em-evt-discovery-category">Conferences</span>
+                        <a href="404.html" class="em-evt-discovery-image-btn"
+                            aria-label="Explore The Innovation Forum"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="em-evt-discovery-content">
+                        <div class="em-evt-discovery-date"><strong>09</strong><span>JAN<br>2027</span></div>
+                        <div class="em-evt-discovery-info">
+                            <span class="em-evt-discovery-location"><i class="bi bi-geo-alt"></i> Chennai, Tamil
+                                Nadu</span>
+                            <h3>The Innovation Forum</h3>
+                            <p>A platform for emerging ideas, meaningful conversations, and the future of innovation.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="em-evt-discovery-card" data-category="celebration" data-title="Golden Evening">
+                    <div class="em-evt-discovery-image">
+                        <img src="assets/images/event-card.webp" alt="Golden Evening">
+                        <span class="em-evt-discovery-number">10</span>
+                        <span class="em-evt-discovery-category">Celebrations</span>
+                        <a href="404.html" class="em-evt-discovery-image-btn" aria-label="Explore Golden Evening"><i
+                                class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="em-evt-discovery-content">
+                        <div class="em-evt-discovery-date"><strong>16</strong><span>JAN<br>2027</span></div>
+                        <div class="em-evt-discovery-info">
+                            <span class="em-evt-discovery-location"><i class="bi bi-geo-alt"></i> Madurai, Tamil
+                                Nadu</span>
+                            <h3>Golden Evening</h3>
+                            <p>An elegant celebration where refined styling, entertainment, and hospitality meet.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="em-evt-discovery-card" data-category="workshop" data-title="Future Makers Lab">
+                    <div class="em-evt-discovery-image">
+                        <img src="assets/images/create-production.webp" alt="Future Makers Lab">
+                        <span class="em-evt-discovery-number">11</span>
+                        <span class="em-evt-discovery-category">Workshops</span>
+                        <a href="404.html" class="em-evt-discovery-image-btn" aria-label="Explore Future Makers Lab"><i
+                                class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="em-evt-discovery-content">
+                        <div class="em-evt-discovery-date"><strong>23</strong><span>JAN<br>2027</span></div>
+                        <div class="em-evt-discovery-info">
+                            <span class="em-evt-discovery-location"><i class="bi bi-geo-alt"></i> Hyderabad,
+                                Telangana</span>
+                            <h3>Future Makers Lab</h3>
+                            <p>A hands-on workshop designed to encourage learning, experimentation, and collaboration.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="em-evt-discovery-card" data-category="private" data-title="Midnight Garden">
+                    <div class="em-evt-discovery-image">
+                        <img src="assets/images/create-styling.webp" alt="Midnight Garden">
+                        <span class="em-evt-discovery-number">12</span>
+                        <span class="em-evt-discovery-category">Private Events</span>
+                        <a href="404.html" class="em-evt-discovery-image-btn" aria-label="Explore Midnight Garden"><i
+                                class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="em-evt-discovery-content">
+                        <div class="em-evt-discovery-date"><strong>30</strong><span>JAN<br>2027</span></div>
+                        <div class="em-evt-discovery-info">
+                            <span class="em-evt-discovery-location"><i class="bi bi-geo-alt"></i> Coimbatore, Tamil
+                                Nadu</span>
+                            <h3>Midnight Garden</h3>
+                            <p>A private evening experience built around atmosphere, intimate details, and unforgettable
+                                moments.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="em-evt-discovery-empty" id="emEvtDiscoveryEmpty">
+                <i class="bi bi-search"></i>
+                <h3>No Events Found</h3>
+                <p>Try another category or search for a different event.</p>
+                <button type="button" id="emEvtDiscoveryReset">View All Events</button>
+            </div>
+        </div>
+    </section>
+    <!--- Event Discovery / Category Filter Section End --->
+
+    <!--- How We Bring Events To Life Section Start --->
+    <section class="em-evt-process">
+        <div class="em-evt-process-grid"></div>
+        <div class="em-evt-process-glow em-evt-process-glow-one"></div>
+        <div class="em-evt-process-glow em-evt-process-glow-two"></div>
+        <div class="container">
+            <div class="em-evt-process-header">
+                <div class="em-evt-process-label">
+                    <span class="em-evt-process-label-line"></span>
+                    <span>Our Process</span>
+                </div>
+                <div class="em-evt-process-heading">
+                    <span>How We Bring Events To Life</span>
+                    <h2>From A Simple Idea To A <strong>Moment Worth Remembering.</strong></h2>
+                    <p>Every unforgettable event starts with a thought. We transform that thought through strategy,
+                        creativity, precision, and execution.</p>
+                </div>
+            </div>
+            <div class="em-evt-process-timeline">
+                <div class="em-evt-process-line">
+                    <span class="em-evt-process-line-progress"></span>
+                </div>
+                <article class="em-evt-process-step em-evt-process-step-left active" data-process="0">
+                    <div class="em-evt-process-marker">
+                        <span>01</span>
+                    </div>
+                    <div class="em-evt-process-content">
+                        <span class="em-evt-process-step-label">The Beginning</span>
+                        <h3>Discover</h3>
+                        <p>We start by listening. We understand your goals, audience, ideas, expectations, and the
+                            feeling you want your event to create.</p>
+                        <div class="em-evt-process-tags">
+                            <span>Brief</span>
+                            <span>Goals</span>
+                            <span>Audience</span>
+                        </div>
+                    </div>
+                    <div class="em-evt-process-side">
+                        <span>01</span>
+                        <i class="bi bi-chat-square-heart"></i>
+                    </div>
+                </article>
+                <article class="em-evt-process-step em-evt-process-step-right" data-process="1">
+                    <div class="em-evt-process-marker">
+                        <span>02</span>
+                    </div>
+                    <div class="em-evt-process-content">
+                        <span class="em-evt-process-step-label">The Creative Direction</span>
+                        <h3>Imagine</h3>
+                        <p>Ideas take shape through creative concepts, visual direction, storytelling, themes,
+                            environments, and experiences designed around your vision.</p>
+                        <div class="em-evt-process-tags">
+                            <span>Concept</span>
+                            <span>Creative</span>
+                            <span>Design</span>
+                        </div>
+                    </div>
+                    <div class="em-evt-process-side">
+                        <span>02</span>
+                        <i class="bi bi-lightbulb"></i>
+                    </div>
+                </article>
+                <article class="em-evt-process-step em-evt-process-step-left" data-process="2">
+                    <div class="em-evt-process-marker">
+                        <span>03</span>
+                    </div>
+                    <div class="em-evt-process-content">
+                        <span class="em-evt-process-step-label">The Blueprint</span>
+                        <h3>Plan</h3>
+                        <p>We turn the creative vision into a detailed roadmap covering timelines, budgets, venues,
+                            logistics, vendors, production, and every moving part.</p>
+                        <div class="em-evt-process-tags">
+                            <span>Strategy</span>
+                            <span>Logistics</span>
+                            <span>Timeline</span>
+                        </div>
+                    </div>
+                    <div class="em-evt-process-side">
+                        <span>03</span>
+                        <i class="bi bi-diagram-3"></i>
+                    </div>
+                </article>
+                <article class="em-evt-process-step em-evt-process-step-right" data-process="3">
+                    <div class="em-evt-process-marker">
+                        <span>04</span>
+                    </div>
+                    <div class="em-evt-process-content">
+                        <span class="em-evt-process-step-label">Making It Real</span>
+                        <h3>Produce</h3>
+                        <p>Our production team brings the plan to life through staging, lighting, sound, styling,
+                            technology, entertainment, and event infrastructure.</p>
+                        <div class="em-evt-process-tags">
+                            <span>Production</span>
+                            <span>Technology</span>
+                            <span>Styling</span>
+                        </div>
+                    </div>
+                    <div class="em-evt-process-side">
+                        <span>04</span>
+                        <i class="bi bi-camera-reels"></i>
+                    </div>
+                </article>
+                <article class="em-evt-process-step em-evt-process-step-left" data-process="4">
+                    <div class="em-evt-process-marker">
+                        <span>05</span>
+                    </div>
+                    <div class="em-evt-process-content">
+                        <span class="em-evt-process-step-label">The Big Moment</span>
+                        <h3>Execute</h3>
+                        <p>When the day arrives, our team coordinates every detail on the ground so everything moves
+                            smoothly, precisely, and confidently.</p>
+                        <div class="em-evt-process-tags">
+                            <span>Operations</span>
+                            <span>Coordination</span>
+                            <span>Support</span>
+                        </div>
+                    </div>
+                    <div class="em-evt-process-side">
+                        <span>05</span>
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+                </article>
+                <article class="em-evt-process-step em-evt-process-step-right" data-process="5">
+                    <div class="em-evt-process-marker">
+                        <span>06</span>
+                    </div>
+                    <div class="em-evt-process-content">
+                        <span class="em-evt-process-step-label">The Moment That Matters</span>
+                        <h3>Experience</h3>
+                        <p>Everything comes together. Guests connect, emotions unfold, and your original idea becomes a
+                            real experience people can remember.</p>
+                        <div class="em-evt-process-tags">
+                            <span>Connect</span>
+                            <span>Celebrate</span>
+                            <span>Remember</span>
+                        </div>
+                    </div>
+                    <div class="em-evt-process-side">
+                        <span>06</span>
+                        <i class="bi bi-stars"></i>
+                    </div>
+                </article>
+            </div>
+            <div class="em-evt-process-footer">
+                <span class="em-evt-process-footer-line"></span>
+                <span>One idea. Six stages. One unforgettable experience.</span>
+            </div>
+        </div>
+    </section>
+    <!--- How We Bring Events To Life Section End --->
+
+    <!--- Event FAQ Section Start --->
+    <section class="em-evt-faq">
+        <div class="em-evt-faq-orb em-evt-faq-orb-one"></div>
+        <div class="em-evt-faq-orb em-evt-faq-orb-two"></div>
+        <div class="container">
+            <div class="em-evt-faq-header">
+                <div class="em-evt-faq-label">
+                    <span class="em-evt-faq-label-line"></span>
+                    <span>Frequently Asked Questions</span>
+                </div>
+                <div class="em-evt-faq-intro">
+                    <span class="em-evt-faq-number">04 / FAQ</span>
+                    <p>Everything you need to know before bringing your next event to life.</p>
+                </div>
+            </div>
+            <div class="em-evt-faq-layout">
+                <div class="em-evt-faq-left">
+                    <div class="em-evt-faq-title-wrap">
+                        <span class="em-evt-faq-kicker">Got Questions?</span>
+                        <h2>Let's Clear<br>Things <strong>Up.</strong></h2>
+                        <p>From planning and production to guest experiences and event-day execution, here are answers
+                            to the questions we hear most often.</p>
+                    </div>
+                    <div class="em-evt-faq-contact">
+                        <div class="em-evt-faq-contact-icon">
+                            <i class="bi bi-chat-dots"></i>
+                        </div>
+                        <div class="em-evt-faq-contact-content">
+                            <span>Still have a question?</span>
+                            <a href="404.html">Talk To Our Team <i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="em-evt-faq-right">
+                    <div class="em-evt-faq-list">
+                        <div class="em-evt-faq-item active">
+                            <button class="em-evt-faq-question" type="button" aria-expanded="true">
+                                <span class="em-evt-faq-question-number">01</span>
+                                <span class="em-evt-faq-question-text">What types of events do you manage?</span>
+                                <span class="em-evt-faq-toggle"><i class="bi bi-plus"></i></span>
+                            </button>
+                            <div class="em-evt-faq-answer">
+                                <div class="em-evt-faq-answer-inner">
+                                    <p>We create and manage a wide range of experiences including corporate events,
+                                        conferences, concerts, celebrations, workshops, private gatherings, launches,
+                                        and custom events.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="em-evt-faq-item">
+                            <button class="em-evt-faq-question" type="button" aria-expanded="false">
+                                <span class="em-evt-faq-question-number">02</span>
+                                <span class="em-evt-faq-question-text">How early should I start planning my
+                                    event?</span>
+                                <span class="em-evt-faq-toggle"><i class="bi bi-plus"></i></span>
+                            </button>
+                            <div class="em-evt-faq-answer">
+                                <div class="em-evt-faq-answer-inner">
+                                    <p>Planning time depends on the event size, location, production requirements, and
+                                        guest count. We recommend starting as early as possible so there is enough time
+                                        for creative development, vendor coordination, production, and execution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="em-evt-faq-item">
+                            <button class="em-evt-faq-question" type="button" aria-expanded="false">
+                                <span class="em-evt-faq-question-number">03</span>
+                                <span class="em-evt-faq-question-text">Can you manage the entire event from start to
+                                    finish?</span>
+                                <span class="em-evt-faq-toggle"><i class="bi bi-plus"></i></span>
+                            </button>
+                            <div class="em-evt-faq-answer">
+                                <div class="em-evt-faq-answer-inner">
+                                    <p>Yes. Our team can support the complete event journey, including concept
+                                        development, planning, venue coordination, creative production, entertainment,
+                                        guest management, technical setup, and on-ground execution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="em-evt-faq-item">
+                            <button class="em-evt-faq-question" type="button" aria-expanded="false">
+                                <span class="em-evt-faq-question-number">04</span>
+                                <span class="em-evt-faq-question-text">Can you work with an existing event
+                                    concept?</span>
+                                <span class="em-evt-faq-toggle"><i class="bi bi-plus"></i></span>
+                            </button>
+                            <div class="em-evt-faq-answer">
+                                <div class="em-evt-faq-answer-inner">
+                                    <p>Absolutely. If you already have a concept, we can refine it, develop the creative
+                                        direction, build the production plan, and transform your existing idea into a
+                                        complete event experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="em-evt-faq-item">
+                            <button class="em-evt-faq-question" type="button" aria-expanded="false">
+                                <span class="em-evt-faq-question-number">05</span>
+                                <span class="em-evt-faq-question-text">Do you handle event vendors and production
+                                    partners?</span>
+                                <span class="em-evt-faq-toggle"><i class="bi bi-plus"></i></span>
+                            </button>
+                            <div class="em-evt-faq-answer">
+                                <div class="em-evt-faq-answer-inner">
+                                    <p>Yes. Depending on the project, we coordinate with venues, decorators, production
+                                        teams, entertainment partners, caterers, photographers, technical teams, and
+                                        other event specialists.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="em-evt-faq-item">
+                            <button class="em-evt-faq-question" type="button" aria-expanded="false">
+                                <span class="em-evt-faq-question-number">06</span>
+                                <span class="em-evt-faq-question-text">Do you manage events outside your city?</span>
+                                <span class="em-evt-faq-toggle"><i class="bi bi-plus"></i></span>
+                            </button>
+                            <div class="em-evt-faq-answer">
+                                <div class="em-evt-faq-answer-inner">
+                                    <p>Yes. We can work across different cities and locations based on the event
+                                        requirements. Our planning process is designed to coordinate teams, vendors,
+                                        logistics, and production across locations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="em-evt-faq-item">
+                            <button class="em-evt-faq-question" type="button" aria-expanded="false">
+                                <span class="em-evt-faq-question-number">07</span>
+                                <span class="em-evt-faq-question-text">How do I get started with my event?</span>
+                                <span class="em-evt-faq-toggle"><i class="bi bi-plus"></i></span>
+                            </button>
+                            <div class="em-evt-faq-answer">
+                                <div class="em-evt-faq-answer-inner">
+                                    <p>Simply reach out to our team through the contact page. Tell us about your event,
+                                        objectives, preferred date, location, and requirements, and we will take the
+                                        conversation forward from there.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="em-evt-faq-bottom">
+                        <span>Can't find what you're looking for?</span>
+                        <a href="404.html">Ask Us Directly <i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--- Event FAQ Section End --->
+
+
+    <!--- Footer --->
+    <div id="em-footer"></div>
+
+    <!--- Js Files --->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/footer.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/events.js"></script>
+    <script src="assets/js/all-hero.js"></script>
+</body>
+
+</html>

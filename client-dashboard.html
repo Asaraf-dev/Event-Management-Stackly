@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard | Stackly Events</title>
+    <link rel="icon" href="assets/images/brand-logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+    <!--- Dashboard --->
+    <main class="em-dash">
+        <!--- Sidebar --->
+        <aside class="em-dash-sidebar" id="emDashSidebar">
+            <div class="em-dash-sidebar-top">
+                <a href="index.html" class="em-dash-logo">
+                    <img src="assets/images/brand-logo.webp" alt="Stackly Events">
+                </a>
+                <!--- Mobile Sidebar Profile --->
+                <div class="em-dash-mobile-profile">
+                    <div class="em-dash-mobile-profile-image">
+                        <img src="assets/images/profile-2.webp" alt="Profile">
+                    </div>
+                    <div class="em-dash-mobile-profile-info">
+                        <span>Signed In As</span>
+                        <strong id="emDashMobileEmail">Loading...</strong>
+                    </div>
+                </div>
+            </div>
+            <!--- Sidebar Navigation --->
+            <nav class="em-dash-sidebar-nav">
+                <span class="em-dash-nav-label">Workspace</span>
+                <a href="client-dashboard.html" class="em-dash-nav-link  active">
+                    <i class="bi bi-grid-1x2"></i>
+                    <span>Overview</span>
+                </a>
+                <a href="client-events.html" class="em-dash-nav-link">
+                    <i class="bi bi-calendar-check"></i>
+                    <span>My Events</span>
+                </a>
+                <a href="client-bookings.html" class="em-dash-nav-link">
+                    <i class="bi bi-ticket-perforated"></i>
+                    <span>Bookings</span>
+                </a>
+                <a href="client-profile.html" class="em-dash-nav-link">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="em-dash-nav-link em-dash-logout" id="emDashLogout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+            <div class="em-dash-sidebar-bottom">
+                <span>Stackly Events</span>
+                <small>Event Management Platform</small>
+            </div>
+        </aside>
+        <!--- Sidebar Overlay --->
+        <div class="em-dash-overlay" id="emDashOverlay"></div>
+        <!--- Dashboard Main --->
+        <div class="em-dash-main">
+            <!--- Topbar --->
+            <header class="em-dash-topbar">
+                <div class="em-dash-topbar-left">
+                    <button type="button" class="em-dash-menu-btn" id="emDashMenuBtn" aria-label="Open menu">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <div class="em-dash-title">
+                        <span>Workspace</span>
+                        <h1>Client Dashboard</h1>
+                    </div>
+                </div>
+                <div class="em-dash-topbar-right">
+                    <div class="em-dash-email">
+                        <span>Signed In As</span>
+                        <strong id="emDashEmail">Loading...</strong>
+                    </div>
+                    <div class="em-dash-profile">
+                        <img src="assets/images/profile-2.webp" alt="Profile">
+                        <span class="em-dash-profile-status"></span>
+                    </div>
+                </div>
+            </header>
+
+            <!--- Dashboard Content --->
+            <section class="em-dash-content">
+                <!--- Client Welcome Section --->
+                <div class="em-clo-welcome">
+                    <div class="em-clo-welcome-content">
+                        <span class="em-clo-welcome-label"><i class="bi bi-stars"></i> Client Workspace</span>
+                        <h2>Welcome back, <strong id="emCloWelcomeName">Client</strong></h2>
+                        <p>Everything you need to manage your events, bookings, and upcoming experiences.</p>
+                    </div>
+                    <div class="em-clo-welcome-action">
+                        <a href="404.html" class="em-clo-primary-btn">
+                            <span>View My Events</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!--- Client Statistics Section --->
+                <div class="em-clo-stats">
+                    <div class="em-clo-stat-card">
+                        <div class="em-clo-stat-top">
+                            <span class="em-clo-stat-icon"><i class="bi bi-calendar-event"></i></span>
+                            <span class="em-clo-stat-trend"><i class="bi bi-arrow-up"></i> Active</span>
+                        </div>
+                        <div class="em-clo-stat-value">03</div>
+                        <div class="em-clo-stat-info">
+                            <strong>My Events</strong>
+                            <span>Currently planning</span>
+                        </div>
+                    </div>
+                    <div class="em-clo-stat-card">
+                        <div class="em-clo-stat-top">
+                            <span class="em-clo-stat-icon"><i class="bi bi-calendar-check"></i></span>
+                            <span class="em-clo-stat-trend"><i class="bi bi-clock"></i> Upcoming</span>
+                        </div>
+                        <div class="em-clo-stat-value">02</div>
+                        <div class="em-clo-stat-info">
+                            <strong>Upcoming Events</strong>
+                            <span>Next 30 days</span>
+                        </div>
+                    </div>
+                    <div class="em-clo-stat-card">
+                        <div class="em-clo-stat-top">
+                            <span class="em-clo-stat-icon"><i class="bi bi-ticket-perforated"></i></span>
+                            <span class="em-clo-stat-trend"><i class="bi bi-check-circle"></i> Confirmed</span>
+                        </div>
+                        <div class="em-clo-stat-value">08</div>
+                        <div class="em-clo-stat-info">
+                            <strong>Bookings</strong>
+                            <span>Total bookings</span>
+                        </div>
+                    </div>
+                    <div class="em-clo-stat-card">
+                        <div class="em-clo-stat-top">
+                            <span class="em-clo-stat-icon"><i class="bi bi-wallet2"></i></span>
+                            <span class="em-clo-stat-trend"><i class="bi bi-graph-up-arrow"></i> This Year</span>
+                        </div>
+                        <div class="em-clo-stat-value">₹2.8L</div>
+                        <div class="em-clo-stat-info">
+                            <strong>Total Spent</strong>
+                            <span>Event investment</span>
+                        </div>
+                    </div>
+                </div>
+                <!--- Next Event Section --->
+                <div class="em-clo-section-heading">
+                    <div>
+                        <span class="em-clo-section-label">Your Next Experience</span>
+                        <h3>Upcoming Event</h3>
+                    </div>
+                    <a href="404.html" class="em-clo-view-link">View All <i
+                            class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="em-clo-next-event">
+                    <div class="em-clo-next-event-image">
+                        <img src="assets/images/category-conference.webp" alt="Future Leaders Summit">
+                        <span class="em-clo-event-status"><i class="bi bi-circle-fill"></i> Upcoming</span>
+                    </div>
+                    <div class="em-clo-next-event-content">
+                        <div class="em-clo-event-meta">
+                            <span><i class="bi bi-calendar3"></i> 25 October 2026</span>
+                            <span><i class="bi bi-geo-alt"></i> Bengaluru</span>
+                        </div>
+                        <h3>Future Leaders Summit</h3>
+                        <p>A premium corporate experience bringing together ambitious leaders, innovators, and industry
+                            professionals.</p>
+                        <div class="em-clo-event-progress">
+                            <div class="em-clo-progress-header">
+                                <span>Event Preparation</span>
+                                <strong>72%</strong>
+                            </div>
+                            <div class="em-clo-progress-bar">
+                                <span style="width:72%"></span>
+                            </div>
+                        </div>
+                        <div class="em-clo-next-event-footer">
+                            <div class="em-clo-event-days">
+                                <strong>21</strong>
+                                <span>Days To Go</span>
+                            </div>
+                            <a href="404.html" class="em-clo-event-btn">View Event <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--- My Events Section --->
+                <div class="em-clo-section-heading em-clo-heading-space">
+                    <div>
+                        <span class="em-clo-section-label">Event Workspace</span>
+                        <h3>My Events</h3>
+                    </div>
+                    <a href="404.html" class="em-clo-view-link">View All <i
+                            class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="em-clo-events-grid">
+                    <article class="em-clo-event-card">
+                        <div class="em-clo-event-card-image">
+                            <img src="assets/images/event-rhythm.webp" alt="Rhythm Under The Stars">
+                            <span class="em-clo-event-card-category">Music</span>
+                        </div>
+                        <div class="em-clo-event-card-content">
+                            <div class="em-clo-event-card-date"><i class="bi bi-calendar3"></i> 18 Oct 2026</div>
+                            <h4>Rhythm Under The Stars</h4>
+                            <p><i class="bi bi-geo-alt"></i> Chennai</p>
+                            <div class="em-clo-event-card-bottom">
+                                <span class="em-clo-card-status em-clo-card-status-live">Live Planning</span>
+                                <a href="404.html" aria-label="View Rhythm Under The Stars"><i
+                                        class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="em-clo-event-card">
+                        <div class="em-clo-event-card-image">
+                            <img src="assets/images/create-production.webp" alt="Ideas In Motion">
+                            <span class="em-clo-event-card-category">Conference</span>
+                        </div>
+                        <div class="em-clo-event-card-content">
+                            <div class="em-clo-event-card-date"><i class="bi bi-calendar3"></i> 07 Nov 2026</div>
+                            <h4>Ideas In Motion</h4>
+                            <p><i class="bi bi-geo-alt"></i> Hyderabad</p>
+                            <div class="em-clo-event-card-bottom">
+                                <span class="em-clo-card-status em-clo-card-status-upcoming">Upcoming</span>
+                                <a href="404.html" aria-label="View Ideas In Motion"><i
+                                        class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="em-clo-event-card">
+                        <div class="em-clo-event-card-image">
+                            <img src="assets/images/event-card.webp" alt="Golden Evening">
+                            <span class="em-clo-event-card-category">Celebration</span>
+                        </div>
+                        <div class="em-clo-event-card-content">
+                            <div class="em-clo-event-card-date"><i class="bi bi-calendar3"></i> 16 Jan 2027</div>
+                            <h4>Golden Evening</h4>
+                            <p><i class="bi bi-geo-alt"></i> Madurai</p>
+                            <div class="em-clo-event-card-bottom">
+                                <span class="em-clo-card-status em-clo-card-status-planning">Planning</span>
+                                <a href="404.html" aria-label="View Golden Evening"><i
+                                        class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!--- Schedule And Bookings Section --->
+                <div class="em-clo-two-column">
+                    <!--- Upcoming Schedule --->
+                    <div class="em-clo-panel">
+                        <div class="em-clo-panel-header">
+                            <div>
+                                <span class="em-clo-section-label">Stay On Track</span>
+                                <h3>Upcoming Schedule</h3>
+                            </div>
+                            <i class="bi bi-calendar3"></i>
+                        </div>
+                        <div class="em-clo-timeline">
+                            <div class="em-clo-timeline-item active">
+                                <div class="em-clo-timeline-dot"></div>
+                                <div class="em-clo-timeline-content">
+                                    <span>12 Oct 2026 · 10:00 AM</span>
+                                    <strong>Final Concept Review</strong>
+                                    <p>Future Leaders Summit</p>
+                                </div>
+                            </div>
+                            <div class="em-clo-timeline-item">
+                                <div class="em-clo-timeline-dot"></div>
+                                <div class="em-clo-timeline-content">
+                                    <span>16 Oct 2026 · 03:30 PM</span>
+                                    <strong>Production Meeting</strong>
+                                    <p>Venue & production team</p>
+                                </div>
+                            </div>
+                            <div class="em-clo-timeline-item">
+                                <div class="em-clo-timeline-dot"></div>
+                                <div class="em-clo-timeline-content">
+                                    <span>20 Oct 2026 · 11:00 AM</span>
+                                    <strong>Guest List Review</strong>
+                                    <p>Final attendee confirmation</p>
+                                </div>
+                            </div>
+                            <div class="em-clo-timeline-item">
+                                <div class="em-clo-timeline-dot"></div>
+                                <div class="em-clo-timeline-content">
+                                    <span>25 Oct 2026 · 06:30 PM</span>
+                                    <strong>Event Day</strong>
+                                    <p>Future Leaders Summit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--- Recent Bookings --->
+                    <div class="em-clo-panel">
+                        <div class="em-clo-panel-header">
+                            <div>
+                                <span class="em-clo-section-label">Your Activity</span>
+                                <h3>Recent Bookings</h3>
+                            </div>
+                            <a href="404.html" class="em-clo-panel-link">View All</a>
+                        </div>
+                        <div class="em-clo-bookings">
+                            <div class="em-clo-booking">
+                                <div class="em-clo-booking-icon"><i class="bi bi-camera-reels"></i></div>
+                                <div class="em-clo-booking-info">
+                                    <strong>Event Production</strong>
+                                    <span>Future Leaders Summit</span>
+                                </div>
+                                <div class="em-clo-booking-right">
+                                    <strong>₹85,000</strong>
+                                    <span class="em-clo-booking-paid">Paid</span>
+                                </div>
+                            </div>
+                            <div class="em-clo-booking">
+                                <div class="em-clo-booking-icon"><i class="bi bi-music-note-beamed"></i></div>
+                                <div class="em-clo-booking-info">
+                                    <strong>Live Entertainment</strong>
+                                    <span>Rhythm Under The Stars</span>
+                                </div>
+                                <div class="em-clo-booking-right">
+                                    <strong>₹42,500</strong>
+                                    <span class="em-clo-booking-pending">Pending</span>
+                                </div>
+                            </div>
+                            <div class="em-clo-booking">
+                                <div class="em-clo-booking-icon"><i class="bi bi-camera"></i></div>
+                                <div class="em-clo-booking-info">
+                                    <strong>Photography</strong>
+                                    <span>Ideas In Motion</span>
+                                </div>
+                                <div class="em-clo-booking-right">
+                                    <strong>₹28,000</strong>
+                                    <span class="em-clo-booking-paid">Paid</span>
+                                </div>
+                            </div>
+                            <div class="em-clo-booking">
+                                <div class="em-clo-booking-icon"><i class="bi bi-flower1"></i></div>
+                                <div class="em-clo-booking-info">
+                                    <strong>Event Styling</strong>
+                                    <span>Golden Evening</span>
+                                </div>
+                                <div class="em-clo-booking-right">
+                                    <strong>₹64,000</strong>
+                                    <span class="em-clo-booking-pending">Pending</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- Quick Actions Section --->
+                <div class="em-clo-section-heading em-clo-heading-space">
+                    <div>
+                        <span class="em-clo-section-label">Get Things Done</span>
+                        <h3>Quick Actions</h3>
+                    </div>
+                </div>
+                <div class="em-clo-actions">
+                    <a href="client-events.html" class="em-clo-action-card">
+                        <span class="em-clo-action-icon"><i class="bi bi-calendar-plus"></i></span>
+                        <span class="em-clo-action-content">
+                            <strong>Manage Events</strong>
+                            <small>View and manage your events</small>
+                        </span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                    <a href="client-bookings.html" class="em-clo-action-card">
+                        <span class="em-clo-action-icon"><i class="bi bi-ticket-perforated"></i></span>
+                        <span class="em-clo-action-content">
+                            <strong>View Bookings</strong>
+                            <small>Check payments and bookings</small>
+                        </span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                    <a href="client-profile.html" class="em-clo-action-card">
+                        <span class="em-clo-action-icon"><i class="bi bi-person-circle"></i></span>
+                        <span class="em-clo-action-content">
+                            <strong>My Profile</strong>
+                            <small>Update your account details</small>
+                        </span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                    <a href="404.html" class="em-clo-action-card">
+                        <span class="em-clo-action-icon"><i class="bi bi-headset"></i></span>
+                        <span class="em-clo-action-content">
+                            <strong>Contact Team</strong>
+                            <small>Talk to our event specialists</small>
+                        </span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+                <!--- Client Support Section --->
+                <div class="em-clo-support">
+                    <div class="em-clo-support-icon">
+                        <i class="bi bi-headset"></i>
+                    </div>
+                    <div class="em-clo-support-content">
+                        <span>Need A Hand?</span>
+                        <h3>Our event team is always ready to help.</h3>
+                        <p>Have a question about your event, booking, or payment? Reach out and we'll take care of it.
+                        </p>
+                    </div>
+                    <a href="404.html" class="em-clo-support-btn">Talk To The Team <i
+                            class="bi bi-arrow-up-right"></i></a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/client-overview.js"></script>
+</body>
+
+</html>

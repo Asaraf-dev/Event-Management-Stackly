@@ -1,0 +1,60 @@
+<!--- NavBar --->
+<nav class="navbar navbar-expand-lg em-nav">
+    <div class="container em-nav-container">
+        <a class="navbar-brand em-nav-brand" href="index.html">
+            <img src="assets/images/brand-logo.webp" alt="Event Management Logo" class="em-nav-logo">
+        </a>
+        <div class="em-nav-mobile-actions">
+            <a href="login.html" class="em-nav-mobile-login"><i class="bi bi-person"></i></a>
+            <button class="navbar-toggler em-nav-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#em-nav-offcanvas" aria-controls="em-nav-offcanvas">
+                <span class="em-nav-toggler-icon"><i class="bi bi-list"></i></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse em-nav-collapse">
+            <ul class="navbar-nav mx-auto em-nav-links">
+                <li class="nav-item em-nav-item"><a class="nav-link em-nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item em-nav-item"><a class="nav-link em-nav-link" href="about.html">About</a></li>
+                <li class="nav-item em-nav-item"><a class="nav-link em-nav-link" href="events.html">Event</a></li>
+                <li class="nav-item em-nav-item"><a class="nav-link em-nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item em-nav-item"><a class="nav-link em-nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="em-nav-action">
+                <a href="login.html" class="em-nav-login"><span>Login</span><i class="bi bi-arrow-up-right"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--- Mobile Offcanvas --->
+<div class="offcanvas offcanvas-end em-nav-offcanvas" tabindex="-1" id="em-nav-offcanvas"
+    aria-labelledby="em-nav-offcanvas-label">
+    <div class="offcanvas-header em-nav-offcanvas-header">
+        <a href="index.html" class="em-nav-offcanvas-brand" id="em-nav-offcanvas-label">
+            <img src="assets/images/brand-logo.webp" alt="Event Management Logo" class="em-nav-offcanvas-logo">
+        </a>
+        <button type="button" class="btn-close em-nav-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body em-nav-offcanvas-body">
+        <ul class="em-nav-mobile-links">
+            <li class="em-nav-mobile-item"><a href="index.html"
+                    class="em-nav-mobile-link active"><span>01</span><strong>Home</strong><i
+                        class="bi bi-arrow-up-right"></i></a></li>
+            <li class="em-nav-mobile-item"><a href="about.html"
+                    class="em-nav-mobile-link"><span>02</span><strong>About</strong><i
+                        class="bi bi-arrow-up-right"></i></a></li>
+            <li class="em-nav-mobile-item"><a href="events.html"
+                    class="em-nav-mobile-link"><span>03</span><strong>Event</strong><i
+                        class="bi bi-arrow-up-right"></i></a></li>
+            <li class="em-nav-mobile-item"><a href="blog.html"
+                    class="em-nav-mobile-link"><span>04</span><strong>Blog</strong><i
+                        class="bi bi-arrow-up-right"></i></a></li>
+            <li class="em-nav-mobile-item"><a href="contact.html"
+                    class="em-nav-mobile-link"><span>05</span><strong>Contact</strong><i
+                        class="bi bi-arrow-up-right"></i></a></li>
+        </ul>
+        <div class="em-nav-mobile-bottom">
+            <p>Ready to create unforgettable moments?</p>
+            <a href="login.html" class="em-nav-mobile-btn">Login <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+    </div>
+</div>

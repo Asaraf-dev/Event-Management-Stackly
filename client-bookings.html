@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard | Stackly Events</title>
+    <link rel="icon" href="assets/images/brand-logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+    <!--- Dashboard --->
+    <main class="em-dash">
+        <!--- Sidebar --->
+        <aside class="em-dash-sidebar" id="emDashSidebar">
+            <div class="em-dash-sidebar-top">
+                <a href="index.html" class="em-dash-logo">
+                    <img src="assets/images/brand-logo.webp" alt="Stackly Events">
+                </a>
+                <!--- Mobile Sidebar Profile --->
+                <div class="em-dash-mobile-profile">
+                    <div class="em-dash-mobile-profile-image">
+                        <img src="assets/images/profile-2.webp" alt="Profile">
+                    </div>
+                    <div class="em-dash-mobile-profile-info">
+                        <span>Signed In As</span>
+                        <strong id="emDashMobileEmail">Loading...</strong>
+                    </div>
+                </div>
+            </div>
+            <!--- Sidebar Navigation --->
+            <nav class="em-dash-sidebar-nav">
+                <span class="em-dash-nav-label">Workspace</span>
+                <a href="client-dashboard.html" class="em-dash-nav-link">
+                    <i class="bi bi-grid-1x2"></i>
+                    <span>Overview</span>
+                </a>
+                <a href="client-events.html" class="em-dash-nav-link">
+                    <i class="bi bi-calendar-check"></i>
+                    <span>My Events</span>
+                </a>
+                <a href="client-bookings.html" class="em-dash-nav-link active">
+                    <i class="bi bi-ticket-perforated"></i>
+                    <span>Bookings</span>
+                </a>
+                <a href="client-profile.html" class="em-dash-nav-link">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="404.html" class="em-dash-nav-link em-dash-logout" id="emDashLogout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+            <div class="em-dash-sidebar-bottom">
+                <span>Stackly Events</span>
+                <small>Event Management Platform</small>
+            </div>
+        </aside>
+        <!--- Sidebar Overlay --->
+        <div class="em-dash-overlay" id="emDashOverlay"></div>
+        <!--- Dashboard Main --->
+        <div class="em-dash-main">
+            <!--- Topbar --->
+            <header class="em-dash-topbar">
+                <div class="em-dash-topbar-left">
+                    <button type="button" class="em-dash-menu-btn" id="emDashMenuBtn" aria-label="Open menu">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <div class="em-dash-title">
+                        <span>Workspace</span>
+                        <h1>Booking Dashboard</h1>
+                    </div>
+                </div>
+                <div class="em-dash-topbar-right">
+                    <div class="em-dash-email">
+                        <span>Signed In As</span>
+                        <strong id="emDashEmail">Loading...</strong>
+                    </div>
+                    <div class="em-dash-profile">
+                        <img src="assets/images/profile-2.webp" alt="Profile">
+                        <span class="em-dash-profile-status"></span>
+                    </div>
+                </div>
+            </header>
+        
+            <!--- Dashboard Content --->
+            <section class="em-dash-content">
+                <!--- Booking Header --->
+                <div class="em-cbk-header">
+                    <div class="em-cbk-header-content">
+                        <span class="em-cbk-eyebrow"><i class="bi bi-ticket-perforated"></i> Booking Center</span>
+                        <h2>My <strong>Bookings.</strong></h2>
+                        <p>Manage your event services, payments, invoices, and booking activity from one place.</p>
+                    </div>
+                    <a href="404.html" class="em-cbk-header-btn">
+                        <i class="bi bi-plus-lg"></i>
+                        <span>Book A Service</span>
+                    </a>
+                </div>
+                <!--- Booking Statistics --->
+                <div class="em-cbk-stats">
+                    <div class="em-cbk-stat-card">
+                        <div class="em-cbk-stat-icon"><i class="bi bi-ticket-perforated"></i></div>
+                        <div class="em-cbk-stat-content">
+                            <strong>08</strong>
+                            <span>Total Bookings</span>
+                        </div>
+                    </div>
+                    <div class="em-cbk-stat-card">
+                        <div class="em-cbk-stat-icon"><i class="bi bi-check2-circle"></i></div>
+                        <div class="em-cbk-stat-content">
+                            <strong>05</strong>
+                            <span>Confirmed</span>
+                        </div>
+                    </div>
+                    <div class="em-cbk-stat-card">
+                        <div class="em-cbk-stat-icon"><i class="bi bi-clock-history"></i></div>
+                        <div class="em-cbk-stat-content">
+                            <strong>02</strong>
+                            <span>Pending</span>
+                        </div>
+                    </div>
+                    <div class="em-cbk-stat-card">
+                        <div class="em-cbk-stat-icon"><i class="bi bi-wallet2"></i></div>
+                        <div class="em-cbk-stat-content">
+                            <strong>₹2.19L</strong>
+                            <span>Total Paid</span>
+                        </div>
+                    </div>
+                </div>
+                <!--- Payment Summary --->
+                <div class="em-cbk-payment-summary">
+                    <div class="em-cbk-payment-main">
+                        <div class="em-cbk-payment-heading">
+                            <div>
+                                <span>Payment Overview</span>
+                                <h3>Event Investment</h3>
+                            </div>
+                            <div class="em-cbk-payment-icon">
+                                <i class="bi bi-wallet2"></i>
+                            </div>
+                        </div>
+                        <div class="em-cbk-payment-amount">
+                            <span>Total Booking Value</span>
+                            <strong>₹3,19,500</strong>
+                        </div>
+                        <div class="em-cbk-payment-progress">
+                            <div class="em-cbk-payment-progress-head">
+                                <span>Payment Completed</span>
+                                <strong>69%</strong>
+                            </div>
+                            <div class="em-cbk-payment-bar">
+                                <span style="width:69%"></span>
+                            </div>
+                            <div class="em-cbk-payment-breakdown">
+                                <span><i class="bi bi-circle-fill"></i> Paid ₹2,19,500</span>
+                                <span><i class="bi bi-circle-fill"></i> Remaining ₹1,00,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="em-cbk-payment-next">
+                        <span class="em-cbk-payment-next-label">Next Payment</span>
+                        <strong>₹50,000</strong>
+                        <p>Due on 16 October 2026</p>
+                        <a href="404.html" class="em-cbk-payment-btn">
+                            Make Payment
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!--- Booking Toolbar --->
+                <div class="em-cbk-toolbar">
+                    <div class="em-cbk-search">
+                        <i class="bi bi-search"></i>
+                        <input type="search" id="emCbkSearch" placeholder="Search bookings..."
+                            aria-label="Search bookings">
+                    </div>
+                    <div class="em-cbk-filters">
+                        <button type="button" class="em-cbk-filter active" data-filter="all">All</button>
+                        <button type="button" class="em-cbk-filter" data-filter="confirmed">Confirmed</button>
+                        <button type="button" class="em-cbk-filter" data-filter="pending">Pending</button>
+                        <button type="button" class="em-cbk-filter" data-filter="completed">Completed</button>
+                    </div>
+                </div>
+                <!--- Booking Section Header --->
+                <div class="em-cbk-section-heading">
+                    <div>
+                        <span class="em-cbk-section-label">Booking Activity</span>
+                        <h3>Recent Bookings</h3>
+                    </div>
+                    <span class="em-cbk-result-count" id="emCbkResultCount">6 Bookings</span>
+                </div>
+                <!--- Booking Table --->
+                <div class="em-cbk-table-wrapper">
+                    <div class="em-cbk-table">
+                        <div class="em-cbk-table-head">
+                            <span>Booking</span>
+                            <span>Event</span>
+                            <span>Date</span>
+                            <span>Amount</span>
+                            <span>Status</span>
+                            <span>Action</span>
+                        </div>
+                        <!--- Booking Row --->
+                        <div class="em-cbk-row" data-status="confirmed"
+                            data-search="event production future leaders summit corporate">
+                            <div class="em-cbk-booking-name">
+                                <div class="em-cbk-booking-icon"><i class="bi bi-camera-reels"></i></div>
+                                <div>
+                                    <strong>Event Production</strong>
+                                    <span>404.htmlBK-1048</span>
+                                </div>
+                            </div>
+                            <div class="em-cbk-event-name">
+                                <strong>Future Leaders Summit</strong>
+                                <span>Bengaluru</span>
+                            </div>
+                            <span class="em-cbk-date">25 Oct 2026</span>
+                            <div class="em-cbk-amount">
+                                <strong>₹85,000</strong>
+                                <span>Paid</span>
+                            </div>
+                            <span class="em-cbk-status confirmed"><i class="bi bi-check-circle-fill"></i>
+                                Confirmed</span>
+                            <div class="em-cbk-action">
+                                <a href="404.html" aria-label="View booking"><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <!--- Booking Row --->
+                        <div class="em-cbk-row" data-status="pending"
+                            data-search="live entertainment rhythm stars music">
+                            <div class="em-cbk-booking-name">
+                                <div class="em-cbk-booking-icon pink"><i class="bi bi-music-note-beamed"></i></div>
+                                <div>
+                                    <strong>Live Entertainment</strong>
+                                    <span>404.htmlBK-1047</span>
+                                </div>
+                            </div>
+                            <div class="em-cbk-event-name">
+                                <strong>Rhythm Under The Stars</strong>
+                                <span>Chennai</span>
+                            </div>
+                            <span class="em-cbk-date">18 Oct 2026</span>
+                            <div class="em-cbk-amount">
+                                <strong>₹42,500</strong>
+                                <span>₹20,000 Paid</span>
+                            </div>
+                            <span class="em-cbk-status pending"><i class="bi bi-clock-fill"></i> Pending</span>
+                            <div class="em-cbk-action">
+                                <a href="404.html" aria-label="View booking"><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <!--- Booking Row --->
+                        <div class="em-cbk-row" data-status="confirmed"
+                            data-search="photography ideas motion conference">
+                            <div class="em-cbk-booking-name">
+                                <div class="em-cbk-booking-icon orange"><i class="bi bi-camera"></i></div>
+                                <div>
+                                    <strong>Photography</strong>
+                                    <span>404.htmlBK-1046</span>
+                                </div>
+                            </div>
+                            <div class="em-cbk-event-name">
+                                <strong>Ideas In Motion</strong>
+                                <span>Hyderabad</span>
+                            </div>
+                            <span class="em-cbk-date">07 Nov 2026</span>
+                            <div class="em-cbk-amount">
+                                <strong>₹28,000</strong>
+                                <span>Paid</span>
+                            </div>
+                            <span class="em-cbk-status confirmed"><i class="bi bi-check-circle-fill"></i>
+                                Confirmed</span>
+                            <div class="em-cbk-action">
+                                <a href="404.html" aria-label="View booking"><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <!--- Booking Row --->
+                        <div class="em-cbk-row" data-status="pending"
+                            data-search="event styling golden evening celebration">
+                            <div class="em-cbk-booking-name">
+                                <div class="em-cbk-booking-icon green"><i class="bi bi-flower1"></i></div>
+                                <div>
+                                    <strong>Event Styling</strong>
+                                    <span>404.htmlBK-1045</span>
+                                </div>
+                            </div>
+                            <div class="em-cbk-event-name">
+                                <strong>Golden Evening</strong>
+                                <span>Madurai</span>
+                            </div>
+                            <span class="em-cbk-date">16 Jan 2027</span>
+                            <div class="em-cbk-amount">
+                                <strong>₹64,000</strong>
+                                <span>₹32,000 Paid</span>
+                            </div>
+                            <span class="em-cbk-status pending"><i class="bi bi-clock-fill"></i> Pending</span>
+                            <div class="em-cbk-action">
+                                <a href="404.html" aria-label="View booking"><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <!--- Booking Row --->
+                        <div class="em-cbk-row" data-status="completed"
+                            data-search="venue management future leaders summit">
+                            <div class="em-cbk-booking-name">
+                                <div class="em-cbk-booking-icon purple"><i class="bi bi-building"></i></div>
+                                <div>
+                                    <strong>Venue Management</strong>
+                                    <span>404.htmlBK-1044</span>
+                                </div>
+                            </div>
+                            <div class="em-cbk-event-name">
+                                <strong>Future Leaders Summit</strong>
+                                <span>Bengaluru</span>
+                            </div>
+                            <span class="em-cbk-date">25 Oct 2026</span>
+                            <div class="em-cbk-amount">
+                                <strong>₹75,000</strong>
+                                <span>Paid</span>
+                            </div>
+                            <span class="em-cbk-status completed"><i class="bi bi-check-circle-fill"></i>
+                                Completed</span>
+                            <div class="em-cbk-action">
+                                <a href="404.html" aria-label="View booking"><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <!--- Booking Row --->
+                        <div class="em-cbk-row" data-status="confirmed"
+                            data-search="guest management future leaders summit">
+                            <div class="em-cbk-booking-name">
+                                <div class="em-cbk-booking-icon blue"><i class="bi bi-people"></i></div>
+                                <div>
+                                    <strong>Guest Management</strong>
+                                    <span>404.htmlBK-1043</span>
+                                </div>
+                            </div>
+                            <div class="em-cbk-event-name">
+                                <strong>Future Leaders Summit</strong>
+                                <span>Bengaluru</span>
+                            </div>
+                            <span class="em-cbk-date">25 Oct 2026</span>
+                            <div class="em-cbk-amount">
+                                <strong>₹25,000</strong>
+                                <span>Paid</span>
+                            </div>
+                            <span class="em-cbk-status confirmed"><i class="bi bi-check-circle-fill"></i>
+                                Confirmed</span>
+                            <div class="em-cbk-action">
+                                <a href="404.html" aria-label="View booking"><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- Empty State --->
+                <div class="em-cbk-empty" id="emCbkEmpty">
+                    <div class="em-cbk-empty-icon"><i class="bi bi-ticket-detailed"></i></div>
+                    <h3>No Bookings Found</h3>
+                    <p>We couldn't find any bookings matching your search or selected filter.</p>
+                    <button type="button" id="emCbkReset">Reset Filters</button>
+                </div>
+                <!--- Booking Help Section --->
+                <div class="em-cbk-help">
+                    <div class="em-cbk-help-icon"><i class="bi bi-headset"></i></div>
+                    <div class="em-cbk-help-content">
+                        <span>Need Assistance?</span>
+                        <h3>Questions about a booking or payment?</h3>
+                        <p>Our event team can help you with invoices, payments, booking changes, and service details.
+                        </p>
+                    </div>
+                    <a href="404.html" class="em-cbk-help-btn">Contact Support <i
+                            class="bi bi-arrow-up-right"></i></a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/client-booking.js"></script>
+</body>
+
+</html>
