@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded',function () {
 document.addEventListener('DOMContentLoaded',function () {
     const emCloWelcomeName = document.getElementById('emCloWelcomeName');
     /*--- Load Client Data ---*/
-    const emCloRegisteredName = localStorage.getItem('emRegisteredName') || 'Client';
+    const emCloRegisteredName = localStorage.getItem('emRegisteredName') || 'Admin';
     if (emCloWelcomeName) {
         emCloWelcomeName.textContent = emCloRegisteredName.split(' ')[0];
     }
